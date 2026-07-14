@@ -1,0 +1,1412 @@
+# Boletín Tema 9
+
+## Índice
+* [Conceptos](#conceptos)
+* [Problema 1: Torneado de acero de alta resistencia](#problema-1)
+* [Problema 2: Fresado frontal de fundición gris](#problema-2)
+* [Problema 3: Torneado de desbaste en una pasada](#problema-3)
+* [Problema 4: Planeado frontal de pieza de acero](#problema-4)
+* [Problema 5: Taladrado de bloque de acero](#problema-5)
+
+---
+
+## Conceptos
+
+* Torneado:
+  Proceso de
+  arranque de
+  viruta para
+  piezas
+  cilíndricas.
+
+* Ley Denis:
+  Relaciona
+  velocidad,
+  avance y
+  espesor:
+  $$V_0^{*3} \cdot f^2 \cdot a_p = V_0^3 \cdot f_0^2 \cdot a_{p0}$$
+
+* Velocidad:
+  $$N = \frac{V_c \cdot 1000}{\pi \cdot D}$$
+
+* Fuerza corte:
+  $$F_c = K_s \cdot a_p \cdot f$$
+  Donde:
+  - Esfuerzo Ks:
+    $$K_s = \frac{C_{Ks}}{\sqrt[E_{Ks}]{f \cdot a_p}}$$
+
+* Potencia:
+  $$W = \frac{F_c \cdot V_c}{\eta}$$
+
+* Tiempo:
+  $$t_m = \frac{L}{f \cdot N}$$
+  Donde:
+  - Longitud L:
+    $$L = l_e + l + a_p \cdot \cot(\kappa_r)$$
+
+* Vida útil:
+  $$Q_{\text{filo}} = \frac{Q_0 \cdot 1,5}{\left(\frac{V_{\text{real}}}{V_0}\right)^3}$$
+  Donde:
+  - Con 3 filos:
+    $$Q_{\text{total}} = 3 \cdot Q_{\text{filo}}$$
+
+* Fresado:
+  Proceso de
+  arranque con
+  herramienta
+  rotativa de
+  múltiples
+  filos.
+
+* Ley Denis
+  en Fresado:
+  $$V_0^3 \cdot f_{z0}^2 \cdot (b_0 + a_{p0}) = V^3 \cdot f_z^2 \cdot (b + a_p)$$
+
+* Volumen
+  viruta pieza:
+  $$Q_{\text{pieza}} = B \cdot a_p \cdot l$$
+
+* Volumen
+  vida útil
+  fresado:
+  $$Q_{\text{herramienta}} = \frac{Q_0}{2}$$
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcripción:
+Se desean
+mecanizar
+piezas como
+las de la
+figura en un
+torno que
+posee una
+gama de
+velocidades
+de:
+$$80$$
+Unidad:
+$$\text{rpm}$$
+$$105$$
+Unidad:
+$$\text{rpm}$$
+$$130$$
+Unidad:
+$$\text{rpm}$$
+$$235$$
+Unidad:
+$$\text{rpm}$$
+$$310$$
+Unidad:
+$$\text{rpm}$$
+$$400$$
+Unidad:
+$$\text{rpm}$$
+$$550$$
+Unidad:
+$$\text{rpm}$$
+$$680$$
+Unidad:
+$$\text{rpm}$$
+$$900$$
+Unidad:
+$$\text{rpm}$$
+$$1150$$
+Unidad:
+$$\text{rpm}$$
+y:
+$$1550$$
+Unidad:
+$$\text{rpm}$$
+
+Si las piezas
+son de acero
+de:
+$$\sigma_r = 600\text{ N/mm}^2$$
+y la
+herramienta
+utilizada es
+de plaquita
+de metal
+duro:
+$$V_0 = 101\text{ m/min}$$
+$$Q_0 = 20\text{ dm}^3$$
+y la relación:
+$$\frac{f}{a_p} = \frac{1}{10}$$
+determinar:
+1. Velocidad
+de corte
+teórica a
+emplear
+utilizando
+refrigeración
+a presión.
+2. Velocidad
+de giro de
+la pieza y
+velocidad de
+corte real.
+3. Potencia
+real de la
+máquina si:
+$$\eta = 0,8$$
+4. Tiempo de
+mecanizado de
+1 pieza.
+5. ¿Cuántas
+piezas podrán
+mecanizarse
+con una sola
+herramienta?
+
+### Datos:
+- Diám. mayor:
+$$D = 98$$
+Unidad:
+$$\text{mm}$$
+- Diám. menor:
+$$d = 90$$
+Unidad:
+$$\text{mm}$$
+- Longitud (l):
+$$l = 225$$
+Unidad:
+$$\text{mm}$$
+- Ángulo:
+$$\kappa_r = 60^{\circ}$$
+- Ensayo V0:
+$$V_0 = 101$$
+Unidad:
+$$\text{m/min}$$
+- Ensayo f0:
+$$f_0 = 0,5$$
+Unidad:
+$$\text{mm/vuelta}$$
+- Ensayo ap0:
+$$a_{p0} = 5$$
+Unidad:
+$$\text{mm}$$
+- Vida Q0:
+$$Q_0 = 20$$
+Unidad:
+$$\text{dm}^3$$
+- Rendimiento:
+$$\eta = 0,8$$
+- Seguridad:
+$$l_e + l_s = 5$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Velocidad de
+corte teórica.
+
+##### Pasada:
+$$a_p = \frac{D - d}{2}$$
+$$a_p = \frac{98 - 90}{2}$$
+$$a_p = 4$$
+Unidad:
+$$\text{mm}$$
+
+##### Avance:
+$$\frac{f}{a_p} = 0,1$$
+$$f = 0,1 \cdot 4$$
+$$f = 0,4$$
+Unidad:
+$$\text{mm/vuelta}$$
+
+##### Denis:
+$$V_0^* = \sqrt[3]{\frac{V_0^3 \cdot f_0^2 \cdot a_{p0}}{f^2 \cdot a_p}}$$
+$$V_0^* = \sqrt[3]{\frac{101^3 \cdot 0,5^2 \cdot 5}{0,4^2 \cdot 4}}$$
+$$V_0^* = \sqrt[3]{\frac{1030301 \cdot 0,25 \cdot 5}{0,16 \cdot 4}}$$
+$$V_0^* = \sqrt[3]{\frac{1287876,25}{0,64}}$$
+$$V_0^* \approx 126,25$$
+Unidad:
+$$\text{m/min}$$
+
+##### Refrig.:
+Con presión,
+se multiplica
+por 1,5:
+$$V_{\text{o,refrig}} = 1,5 \cdot V_0^*$$
+$$V_{\text{o,refrig}} = 1,5 \cdot 126,25$$
+$$V_{\text{o,refrig}} = 189,375$$
+Unidad:
+$$\text{m/min}$$
+
+##### Efectiva:
+Multiplicamos
+por 4/3:
+$$V_{\text{ef}} = \frac{4}{3} \cdot V_{\text{o,refrig}}$$
+$$V_{\text{ef}} = \frac{4}{3} \cdot 189,375$$
+$$V_{\text{ef}} = 252,5$$
+Unidad:
+$$\text{m/min}$$
+
+---
+
+#### Apartado 2:
+Velocidad de
+giro y corte.
+
+##### Giro (N):
+$$N = \frac{V_{\text{ef}} \cdot 1000}{\pi \cdot D}$$
+$$N = \frac{252,5 \cdot 1000}{\pi \cdot 98}$$
+$$N \approx 820,14$$
+Unidad:
+$$\text{rpm}$$
+
+Gama del
+torno más
+cercana:
+$$680\text{ rpm}$$
+$$900\text{ rpm}$$
+
+Diferencia
+con 900 es:
+$$900 - 820,14 = 79,86$$
+Como:
+$$79,86 > 20$$
+Se adopta la
+velocidad
+inferior:
+$$N = 680$$
+Unidad:
+$$\text{rpm}$$
+
+##### Corte:
+$$V_{c,\text{real}} = \frac{\pi \cdot D \cdot N}{1000}$$
+$$V_{c,\text{real}} = \frac{\pi \cdot 98 \cdot 680}{1000}$$
+$$V_{c,\text{real}} \approx 209,36$$
+Unidad:
+$$\text{m/min}$$
+
+---
+
+#### Apartado 3:
+Potencia real
+de máquina.
+
+De la tabla
+para acero de:
+$$600\text{ N/mm}^2$$
+Obtenemos:
+$$C_{Ks} = 2780$$
+$$E_{Ks} = 8$$
+
+##### Fuerza Ks:
+$$K_s = \frac{C_{Ks}}{\sqrt[8]{f \cdot a_p}}$$
+$$K_s = \frac{2780}{\sqrt[8]{0,4 \cdot 4}}$$
+$$K_s = \frac{2780}{\sqrt[8]{1,6}}$$
+$$K_s \approx 2621,38$$
+Unidad:
+$$\text{N/mm}^2$$
+
+##### Potencia:
+$$W = \frac{K_s \cdot a_p \cdot f \cdot V_{c,\text{real}}}{\eta}$$
+Sustituyendo
+(con velocidad
+en m/s):
+$$W = \frac{2621,38 \cdot 4 \cdot 0,4 \cdot \left(\frac{209,36}{60}\right)}{0,8}$$
+$$W \approx 18293,74$$
+Unidad:
+$$\text{W}$$
+
+En kW:
+$$W \approx 18,3$$
+Unidad:
+$$\text{kW}$$
+
+---
+
+#### Apartado 4:
+Tiempo de
+mecanizado (tm).
+
+Longitud de
+mecanizado:
+$$L = l_{\text{seg}} + l + a_p \cdot \cot(\kappa_r)$$
+$$L = 5 + 225 + 4 \cdot \cot(60^{\circ})$$
+$$L = 230 + 2,31$$
+$$L = 232,31$$
+Unidad:
+$$\text{mm}$$
+
+Tiempo (tm):
+$$t_m = \frac{L}{f \cdot N}$$
+$$t_m = \frac{232,31}{0,4 \cdot 680}$$
+$$t_m \approx 0,854$$
+Unidad:
+$$\text{min}$$
+(Equivale a:
+$$51,24$$
+Unidad:
+$$\text{s}$$
+).
+
+---
+
+#### Apartado 5:
+Número de
+piezas por
+herramienta.
+
+##### Límite Q:
+La vida del
+filo corregida
+por velocidad:
+$$Q_{\text{filo}} = \frac{Q_0 \cdot 1,5}{\left(\frac{V_{c,\text{real}}}{V_0}\right)^3}$$
+$$Q_{\text{filo}} = \frac{20 \cdot 1,5}{\left(\frac{209,36}{101}\right)^3}$$
+$$Q_{\text{filo}} = \frac{30}{8,91}$$
+$$Q_{\text{filo}} \approx 3,33$$
+Unidad:
+$$\text{dm}^3$$
+
+La plaquita
+tiene 3 filos:
+$$Q_{\text{total}} = 3 \cdot Q_{\text{filo}}$$
+$$Q_{\text{total}} = 3 \cdot 3,33$$
+$$Q_{\text{total}} = 9,99$$
+Unidad:
+$$\text{dm}^3$$
+
+En mm3:
+$$Q_{\text{total}} = 9,99 \cdot 10^6$$
+Unidad:
+$$\text{mm}^3$$
+
+##### Pieza (V):
+Volumen de
+viruta por
+pieza:
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (D^2 - d^2) \cdot l$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (98^2 - 90^2) \cdot 225$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot 1504 \cdot 225$$
+$$V_{\text{viruta}} \approx 265778,74$$
+Unidad:
+$$\text{mm}^3$$
+
+En dm3:
+$$V_{\text{viruta}} \approx 0,266$$
+Unidad:
+$$\text{dm}^3$$
+
+##### Piezas:
+$$\text{Nº piezas} = \frac{Q_{\text{total}}}{V_{\text{viruta}}}$$
+$$\text{Nº piezas} = \frac{9,99}{0,266}$$
+$$\text{Nº piezas} \approx 37,56$$
+
+Solución:
+Se pueden
+mecanizar:
+$$37$$
+piezas.
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcripción:
+Se desea
+realizar un
+fresado
+planeado de
+50 mm de
+anchura por
+4 mm de
+profundidad en
+una pieza de
+fundición gris
+de 300 mm de
+longitud. Para
+ello se
+utiliza una
+fresa
+cilíndrica de
+acero rápido
+que tiene
+90 mm de
+diámetro y
+10 dientes.
+Sabiendo que
+la operación
+se realiza en
+seco y que el
+avance por
+diente es de
+0,05 mm,
+determinar:
+
+1. Número de
+revoluciones
+a emplear en
+el supuesto
+que la máquina
+disponga de la
+siguiente
+relación:
+55, 70, 120,
+205, 340,
+600 y 1000
+r.p.m.
+2. Número de
+piezas que
+se mecanizan
+entre dos
+afilados
+consecutivos
+de la
+herramienta.
+3. En el
+supuesto que
+la fresa
+admita 10
+afilados,
+calcular el
+número de
+herramientas
+para fabricar
+una serie de
+3.000 piezas.
+
+Datos:
+$$V_0 = 21\text{ m/min}$$
+$$Q_0 = 10\text{ dm}^3$$
+
+### Datos:
+- Ancho (B):
+$$B = 50$$
+Unidad:
+$$\text{mm}$$
+- Pasada (ap):
+$$a_p = 4$$
+Unidad:
+$$\text{mm}$$
+- Longitud (l):
+$$l = 300$$
+Unidad:
+$$\text{mm}$$
+- Diámetro (D):
+$$D = 90$$
+Unidad:
+$$\text{mm}$$
+- Dientes (z):
+$$z = 10$$
+- Avance (fz):
+$$f_z = 0,05$$
+Unidad:
+$$\text{mm/diente}$$
+- Ensayo V0:
+$$V_0 = 21$$
+Unidad:
+$$\text{m/min}$$
+- Vida Q0:
+$$Q_0 = 10$$
+Unidad:
+$$\text{dm}^3$$
+- Ensayo fz0:
+$$f_{z0} = 0,05$$
+Unidad:
+$$\text{mm/diente}$$
+- Ensayo b0+ap0:
+$$b_0 + a_{p0} = 50$$
+Unidad:
+$$\text{mm}$$
+- Afilados:
+$$N_{\text{afil}} = 10$$
+- Serie total:
+$$N_{\text{serie}} = 3000$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Número de
+revoluciones.
+
+##### Denis:
+$$V_0^3 \cdot f_{z0}^2 \cdot (b_0 + a_{p0}) = V^3 \cdot f_z^2 \cdot (b + a_p)$$
+Como:
+$$b = B = 50$$
+Unidad:
+$$\text{mm}$$
+
+Sustituyendo
+y despejando:
+$$V = \sqrt[3]{\frac{V_0^3 \cdot f_{z0}^2 \cdot (b_0 + a_{p0})}{f_z^2 \cdot (B + a_p)}}$$
+$$V = \sqrt[3]{\frac{21^3 \cdot 0,05^2 \cdot 50}{0,05^2 \cdot (50 + 4)}}$$
+$$V = \sqrt[3]{\frac{9261 \cdot 50}{54}}$$
+$$V = \sqrt[3]{\frac{463050}{54}}$$
+$$V = \sqrt[3]{8575}$$
+$$V \approx 20,47$$
+Unidad:
+$$\text{m/min}$$
+
+Este valor es:
+$$V_{\text{o,refrig.normal}}^* \approx 20,47$$
+Unidad:
+$$\text{m/min}$$
+
+##### Efectiva:
+Con refrig.
+normal:
+$$V_{\text{ef,refrig}} = \frac{4}{3} \cdot V_{\text{o,refrig.normal}}^*$$
+$$V_{\text{ef,refrig}} = \frac{4}{3} \cdot 20,47$$
+$$V_{\text{ef,refrig}} \approx 27,29$$
+Unidad:
+$$\text{m/min}$$
+
+##### En seco:
+La relación
+seco/refrig es:
+$$V_{\text{ef,seco}} = \frac{V_{\text{ef,refrig}}}{1,25}$$
+$$V_{\text{ef,seco}} = \frac{27,29}{1,25}$$
+$$V_{\text{ef,seco}} \approx 21,83$$
+Unidad:
+$$\text{m/min}$$
+
+##### Giro (N):
+$$N = \frac{V_{\text{ef,seco}} \cdot 1000}{\pi \cdot D}$$
+$$N = \frac{21,83 \cdot 1000}{\pi \cdot 90}$$
+$$N \approx 77,2$$
+Unidad:
+$$\text{rpm}$$
+
+Gama de giros:
+$$55\text{ rpm}$$
+$$70\text{ rpm}$$
+$$120\text{ rpm}$$
+
+La diferencia
+con 120 es
+muy amplia.
+
+Se adopta por
+seguridad la
+inferior:
+$$N = 70$$
+Unidad:
+$$\text{rpm}$$
+
+---
+
+#### Apartado 2:
+Piezas entre
+dos afilados.
+
+##### Vida Q:
+A velocidad
+efectiva, el
+volumen es
+la mitad:
+$$Q_{\text{herramienta}} = \frac{Q_0}{2}$$
+$$Q_{\text{herramienta}} = \frac{10}{2}$$
+$$Q_{\text{herramienta}} = 5$$
+Unidad:
+$$\text{dm}^3$$
+
+##### Pieza (Q):
+Volumen por
+pieza:
+$$Q_{\text{pieza}} = B \cdot a_p \cdot l$$
+$$Q_{\text{pieza}} = 50 \cdot 4 \cdot 300$$
+$$Q_{\text{pieza}} = 60000$$
+Unidad:
+$$\text{mm}^3$$
+
+En dm3:
+$$Q_{\text{pieza}} = 0,06$$
+Unidad:
+$$\text{dm}^3$$
+
+##### Piezas:
+$$\text{Nº piezas} = \frac{Q_{\text{herramienta}}}{Q_{\text{pieza}}}$$
+$$\text{Nº piezas} = \frac{5}{0,06}$$
+$$\text{Nº piezas} \approx 83,33$$
+
+Solución:
+Se mecanizan:
+$$83$$
+piezas.
+
+---
+
+#### Apartado 3:
+Herramientas
+necesarias.
+
+Cada fresa
+admite 10
+afilados.
+
+Vidas de una
+herramienta:
+$$1 + 10 = 11$$
+
+Producción
+por fresa:
+$$\text{Prod} = 83 \cdot 11$$
+$$\text{Prod} = 913$$
+piezas.
+
+Fresas
+necesarias:
+$$\text{Nº fresas} = \frac{3000}{913}$$
+$$\text{Nº fresas} \approx 3,29$$
+
+Solución:
+Se necesitan:
+$$4$$
+herramientas.
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcripción:
+Se desea
+mecanizar en
+desbaste la
+pieza de la
+figura en un
+torno que
+tiene un
+rendimiento
+del 78%, un
+motor de 4 Kw
+y una gama de
+revoluciones
+de:
+$$55$$
+Unidad:
+$$\text{rpm}$$
+$$78$$
+Unidad:
+$$\text{rpm}$$
+$$125$$
+Unidad:
+$$\text{rpm}$$
+$$250$$
+Unidad:
+$$\text{rpm}$$
+$$375$$
+Unidad:
+$$\text{rpm}$$
+$$550$$
+Unidad:
+$$\text{rpm}$$
+$$735$$
+Unidad:
+$$\text{rpm}$$
+$$980$$
+Unidad:
+$$\text{rpm}$$
+$$1100$$
+Unidad:
+$$\text{rpm}$$
+$$1275$$
+Unidad:
+$$\text{rpm}$$
+$$1550$$
+Unidad:
+$$\text{rpm}$$
+y:
+$$2000$$
+Unidad:
+$$\text{rpm}$$
+
+sabiendo que:
+$$k_s = 1250\text{ N/mm}^2$$
+la velocidad
+de corte
+admisible
+para el
+material y la
+herramienta
+es de:
+$$90\text{ m/min}$$
+y se desea
+realizar en
+una sola
+pasada.
+Determinar:
+
+1. Número de
+revoluciones
+a emplear.
+2. Velocidad
+de corte
+real.
+3. Velocidad
+de avance.
+4. Tiempo de
+mecanizado de
+una pieza.
+5. Número de
+piezas que
+se podrán
+mecanizar
+con una
+plaquita si el
+tiempo de
+duración del
+filo a:
+$$90\text{ m/min}$$
+es de:
+$$60\text{ min}$$
+y:
+$$n = 1,7$$
+
+Datos:
+$$l_e = l_s = 5\text{ mm}$$
+
+### Datos:
+- Diám. mayor:
+$$D = 90$$
+Unidad:
+$$\text{mm}$$
+- Diám. menor:
+$$d = 80$$
+Unidad:
+$$\text{mm}$$
+- Longitud (l):
+$$l = 250$$
+Unidad:
+$$\text{mm}$$
+- Ángulo:
+$$\kappa_r = 60^{\circ}$$
+- Rendimiento:
+$$\eta = 0,78$$
+- Potencia:
+$$P = 4000$$
+Unidad:
+$$\text{W}$$
+- Esfuerzo Ks:
+$$K_s = 1250$$
+Unidad:
+$$\text{N/mm}^2$$
+- Vel. adm.:
+$$V_{\text{adm}} = 90$$
+Unidad:
+$$\text{m/min}$$
+- Seguridad:
+$$l_e = l_s = 5$$
+Unidad:
+$$\text{mm}$$
+- Vida T0:
+$$T_0 = 60$$
+Unidad:
+$$\text{min}$$
+- Exponente n:
+$$n = 1,7$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Número de
+revoluciones.
+
+##### Giro (N):
+$$N_{\text{teórico}} = \frac{V_{\text{adm}} \cdot 1000}{\pi \cdot D}$$
+$$N_{\text{teórico}} = \frac{90 \cdot 1000}{\pi \cdot 90}$$
+$$N_{\text{teórico}} \approx 318,3$$
+Unidad:
+$$\text{rpm}$$
+
+Gama de giros:
+$$250\text{ rpm}$$
+$$375\text{ rpm}$$
+
+Diferencia
+con 375 es:
+$$375 - 318,3 = 56,7$$
+Como:
+$$56,7 > 10$$
+Se adopta la
+velocidad
+inferior:
+$$N = 250$$
+Unidad:
+$$\text{rpm}$$
+
+---
+
+#### Apartado 2:
+Velocidad de
+corte real.
+
+##### Corte:
+$$V_{c,\text{real}} = \frac{\pi \cdot D \cdot N}{1000}$$
+$$V_{c,\text{real}} = \frac{\pi \cdot 90 \cdot 250}{1000}$$
+$$V_{c,\text{real}} \approx 70,7$$
+Unidad:
+$$\text{m/min}$$
+
+---
+
+#### Apartado 3:
+Velocidad de
+avance (Vf).
+
+##### Pasada:
+$$a_p = \frac{D - d}{2}$$
+$$a_p = \frac{90 - 80}{2}$$
+$$a_p = 5$$
+Unidad:
+$$\text{mm}$$
+
+##### Potencia W:
+$$W = P \cdot \eta$$
+$$W = 4000 \cdot 0,78$$
+$$W = 3120$$
+Unidad:
+$$\text{W}$$
+
+##### Avance:
+$$W = K_s \cdot a_p \cdot f \cdot \frac{V_{c,\text{real}}}{60}$$
+$$3120 = 1250 \cdot 5 \cdot f \cdot \frac{70,7}{60}$$
+$$3120 = 6250 \cdot f \cdot 1,1783$$
+$$3120 = 7364,58 \cdot f$$
+$$f \approx 0,42$$
+Unidad:
+$$\text{mm/vuelta}$$
+
+##### Avance (Vf):
+$$V_f = f \cdot N$$
+$$V_f = 0,42 \cdot 250$$
+$$V_f = 105$$
+Unidad:
+$$\text{mm/min}$$
+
+---
+
+#### Apartado 4:
+Tiempo de
+mecanizado (tm).
+
+Longitud de
+mecanizado:
+$$L = l_{\text{seg}} + l + a_p \cdot \cot(\kappa_r)$$
+$$L = 10 + 250 + 5 \cdot \cot(60^{\circ})$$
+$$L = 260 + 2,89$$
+$$L = 262,89$$
+Unidad:
+$$\text{mm}$$
+
+Tiempo (tm):
+$$t_m = \frac{L}{V_f}$$
+$$t_m = \frac{262,89}{105}$$
+$$t_m \approx 2,5$$
+Unidad:
+$$\text{min}$$
+
+---
+
+#### Apartado 5:
+Número de
+piezas por
+herramienta.
+
+##### Método A:
+Usando Taylor.
+
+Constante C:
+$$V_c \cdot T^n = C$$
+$$C = 90 \cdot 60^{1,7}$$
+$$C \approx 94863,61$$
+
+Duración real
+del filo (T):
+$$T_{\text{real}} = \sqrt[1,7]{\frac{C}{V_{c,\text{real}}}}$$
+$$T_{\text{real}} = \sqrt[1,7]{\frac{94863,61}{70,7}}$$
+$$T_{\text{real}} \approx 69,08$$
+Unidad:
+$$\text{min}$$
+
+Piezas por
+filo:
+$$\text{Piezas/filo} = \frac{T_{\text{real}}}{t_m}$$
+$$\text{Piezas/filo} = \frac{69,08}{2,5}$$
+$$\text{Piezas/filo} \approx 27,63$$
+$$\text{Piezas/filo} \approx 27$$
+
+Para la
+plaquita de
+3 filos:
+$$\text{Piezas} = 27 \cdot 3$$
+$$\text{Piezas} = 81$$
+
+##### Método B:
+Por volumen
+de viruta
+(si Q0 =
+$$20\text{ dm}^3$$
+).
+
+Vida del
+filo (Q):
+$$Q_{\text{filo}} = \frac{Q_0}{2}$$
+$$Q_{\text{filo}} = \frac{20}{2}$$
+$$Q_{\text{filo}} = 10$$
+Unidad:
+$$\text{dm}^3$$
+
+En mm3:
+$$Q_{\text{filo}} = 10^7$$
+Unidad:
+$$\text{mm}^3$$
+
+Volumen de
+viruta por
+pieza:
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (D^2 - d^2) \cdot l$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (90^2 - 80^2) \cdot 250$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot 1700 \cdot 250$$
+$$V_{\text{viruta}} \approx 333794,22$$
+Unidad:
+$$\text{mm}^3$$
+
+En dm3:
+$$V_{\text{viruta}} \approx 0,334$$
+Unidad:
+$$\text{dm}^3$$
+
+Piezas por
+filo:
+$$\text{Piezas/filo} = \frac{Q_{\text{filo}}}{V_{\text{viruta}}}$$
+$$\text{Piezas/filo} = \frac{10}{0,334}$$
+$$\text{Piezas/filo} \approx 29,94$$
+$$\text{Piezas/filo} \approx 29$$
+
+Para la
+plaquita:
+$$\text{Piezas} = 29 \cdot 3$$
+$$\text{Piezas} = 87$$
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcripción:
+Se desea
+realizar el
+planeado de
+una pieza de
+acero con:
+$$k_s = 1150\text{ N/mm}^2$$
+de 80 mm de
+ancho y 300 de
+largo,
+eliminando una
+capa de 2,5 mm
+por fresado
+frontal
+utilizando una
+fresa de 90 mm
+con 6 dientes
+con un avance
+por diente de
+0,05 mm,
+sabiendo que el
+proceso debe
+realizarse en un
+tiempo no
+superior a los
+3 minutos. Si
+la máquina
+posee una gama
+de revoluciones
+de:
+$$35$$
+Unidad:
+$$\text{rpm}$$
+$$55$$
+Unidad:
+$$\text{rpm}$$
+$$75$$
+Unidad:
+$$\text{rpm}$$
+$$95$$
+Unidad:
+$$\text{rpm}$$
+$$135$$
+Unidad:
+$$\text{rpm}$$
+$$275$$
+Unidad:
+$$\text{rpm}$$
+$$330$$
+Unidad:
+$$\text{rpm}$$
+$$475$$
+Unidad:
+$$\text{rpm}$$
+$$570$$
+Unidad:
+$$\text{rpm}$$
+$$725$$
+Unidad:
+$$\text{rpm}$$
+$$920$$
+Unidad:
+$$\text{rpm}$$
+$$1250$$
+Unidad:
+$$\text{rpm}$$
+$$1550$$
+Unidad:
+$$\text{rpm}$$
+$$1750$$
+Unidad:
+$$\text{rpm}$$
+y:
+$$2200$$
+Unidad:
+$$\text{rpm}$$
+calcular:
+
+1. Número de
+revoluciones
+a utilizar.
+2. Velocidad
+de corte
+real.
+3. Potencia
+de la máquina
+necesaria si
+el rendimiento
+es del 80%.
+
+Datos:
+$$l_e + l_s = 5\text{ mm}$$
+
+### Datos:
+- Esfuerzo Ks:
+$$K_s = 1150$$
+Unidad:
+$$\text{N/mm}^2$$
+- Ancho (B):
+$$B = 80$$
+Unidad:
+$$\text{mm}$$
+- Longitud (l):
+$$l = 300$$
+Unidad:
+$$\text{mm}$$
+- Pasada (ap):
+$$a_p = 2,5$$
+Unidad:
+$$\text{mm}$$
+- Diámetro (D):
+$$D = 90$$
+Unidad:
+$$\text{mm}$$
+- Dientes (z):
+$$z = 6$$
+- Avance (fz):
+$$f_z = 0,05$$
+Unidad:
+$$\text{mm/diente}$$
+- Tiempo lím.:
+$$t_m \le 3$$
+Unidad:
+$$\text{min}$$
+- Seguridad:
+$$l_e + l_s = 5$$
+Unidad:
+$$\text{mm}$$
+- Rendimiento:
+$$\eta = 0,8$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Número de
+revoluciones.
+
+##### Avance (f):
+Avance por
+revolución:
+$$f = f_z \cdot z$$
+$$f = 0,05 \cdot 6$$
+$$f = 0,3$$
+Unidad:
+$$\text{mm/rev}$$
+
+##### Recorrido (L):
+En planeado,
+el recorrido
+total es:
+$$L = \frac{D}{2} + l_e + l + l_s + \frac{D}{2}$$
+$$L = D + l_e + l_s + l$$
+$$L = 90 + 5 + 300$$
+$$L = 395$$
+Unidad:
+$$\text{mm}$$
+
+##### Giro (N):
+El tiempo es:
+$$t_m = \frac{L}{f \cdot N} \le 3$$
+$$3 = \frac{395}{0,3 \cdot N}$$
+$$0,9 \cdot N = 395$$
+$$N_{\text{teórico}} \approx 438,89$$
+Unidad:
+$$\text{rpm}$$
+
+Gama de giros
+cercanos:
+$$330\text{ rpm}$$
+$$475\text{ rpm}$$
+
+Si usamos 330:
+$$t_m = \frac{395}{0,3 \cdot 330}$$
+$$t_m \approx 3,99$$
+Unidad:
+$$\text{min}$$
+Como:
+$$3,99 > 3$$
+No es válido.
+
+Por tanto,
+elegimos la
+velocidad
+superior:
+$$N = 475$$
+Unidad:
+$$\text{rpm}$$
+
+---
+
+#### Apartado 2:
+Velocidad de
+corte real.
+
+##### Corte:
+$$V_c = \frac{\pi \cdot D \cdot N}{1000}$$
+$$V_c = \frac{\pi \cdot 90 \cdot 475}{1000}$$
+$$V_c \approx 134,3$$
+Unidad:
+$$\text{m/min}$$
+
+---
+
+#### Apartado 3:
+Potencia de
+máquina.
+
+##### Trabajo (W):
+Potencia en
+el filo:
+$$W = K_s \cdot a_p \cdot B \cdot f \cdot N$$
+Convertimos
+el avance
+(mm/min a
+m/s):
+$$W = \frac{1150 \cdot 2,5 \cdot 80 \cdot 0,3 \cdot 475}{60000}$$
+$$W = 546,25$$
+Unidad:
+$$\text{W}$$
+
+##### Motor (P):
+Potencia del
+motor:
+$$P = \frac{W}{\eta}$$
+$$P = \frac{546,25}{0,8}$$
+$$P = 682,8125$$
+Unidad:
+$$\text{W}$$
+
+Solución:
+Potencia de:
+$$682,8125\text{ W}$$
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcripción:
+Sobre un bloque
+de acero de:
+$$K_s = 2620\text{ N/mm}^2$$
+se quiere
+hacer un
+taladro del
+mayor
+diámetro
+posible con
+una
+taladradora de:
+$$500\text{ W}$$
+de potencia
+que tiene un
+rendimiento
+del 90% y
+trabaja a:
+$$300\text{ rpm}$$
+y un avance
+de:
+$$0,2\text{ mm/vuelta}$$
+Se quiere
+hacer el
+trabajo en
+seco y con
+velocidad
+eficaz.
+La herramienta
+empleada tiene
+un:
+$$V_0 = 15\text{ m/min}$$
+y:
+$$Q_0 = 5\text{ dm}^3$$
+
+1) Indique el
+diámetro
+máximo posible
+de la
+herramienta en
+estas
+condiciones.
+2) ¿Qué
+volumen de
+viruta por
+unidad de
+tiempo es
+capaz de
+extraerse en
+el proceso
+descrito?
+
+### Datos:
+- Esfuerzo Ks:
+$$K_s = 2620$$
+Unidad:
+$$\text{N/mm}^2$$
+- Potencia:
+$$P = 500$$
+Unidad:
+$$\text{W}$$
+- Rendimiento:
+$$\eta = 0,9$$
+- Giro (N):
+$$N = 300$$
+Unidad:
+$$\text{rpm}$$
+- Avance (f):
+$$f = 0,2$$
+Unidad:
+$$\text{mm/vuelta}$$
+- Ensayo V0:
+$$V_0 = 15$$
+Unidad:
+$$\text{m/min}$$
+- Vida Q0:
+$$Q_0 = 5$$
+Unidad:
+$$\text{dm}^3$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Diámetro
+máximo.
+
+##### Criterio A:
+Por velocidad
+eficaz (Ve).
+
+Velocidad
+eficaz en
+seco:
+$$V_e = \frac{4}{3} \cdot V_0$$
+$$V_e = \frac{4}{3} \cdot 15$$
+$$V_e = 20$$
+Unidad:
+$$\text{m/min}$$
+
+Diámetro (D):
+$$V_e = \frac{\pi \cdot D \cdot N}{1000}$$
+$$20 = \frac{\pi \cdot D \cdot 300}{1000}$$
+$$20 = 0,3\pi \cdot D$$
+$$D \approx 21,22$$
+Unidad:
+$$\text{mm}$$
+
+##### Potencia:
+Por potencia.
+
+Potencia neta
+en el husillo:
+$$W = P \cdot \eta$$
+$$W = 500 \cdot 0,9$$
+$$W = 450$$
+Unidad:
+$$\text{W}$$
+
+Ecuación de
+potencia:
+$$W = \frac{K_s \cdot \dot{z}}{1000}$$
+Donde caudal:
+$$\dot{z} = \frac{\pi \cdot D^2}{4} \cdot f \cdot \frac{N}{60}$$
+Sustituyendo:
+$$450 = \frac{2620 \cdot \frac{\pi \cdot D^2}{4} \cdot 0,2 \cdot \frac{300}{60}}{1000}$$
+$$450 = \frac{2620 \cdot 0,7854 \cdot D^2 \cdot 1}{1000}$$
+$$450 = 2,0577 \cdot D^2$$
+$$D^2 \approx 218,69$$
+$$D \approx 14,79$$
+Unidad:
+$$\text{mm}$$
+
+##### Límite:
+El diámetro
+admisible es
+el menor de
+ambos:
+$$D_{\text{máx}} \approx 14,79$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+#### Apartado 2:
+Volumen de
+viruta por
+tiempo:
+
+$$\dot{z} = \frac{\pi \cdot D_{\text{máx}}^2}{4} \cdot f \cdot \frac{N}{60}$$
+$$\dot{z} = \frac{\pi \cdot 14,79^2}{4} \cdot 0,2 \cdot 5$$
+$$\dot{z} \approx 171,81$$
+Unidad:
+$$\text{mm}^3/\text{s}$$
+
+En cm3/min:
+$$\dot{z} \approx 10,31$$
+Unidad:
+$$\text{cm}^3/\text{min}$$
+
+En dm3/min:
+$$\dot{z} \approx 0,0103$$
+Unidad:
+$$\text{dm}^3/\text{min}$$
