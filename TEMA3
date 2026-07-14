@@ -1,0 +1,533 @@
+# Boletín Tema 3: Metrología Dimensional
+
+## Índice
+* [Conceptos Clave](#conceptos-clave)
+* [Ejercicio 1: Micrómetro y Apreciación](#ejercicio-1)
+* [Ejercicio 2: Dilatación Térmica y Tolerancia](#ejercicio-2)
+* [Ejercicio 3: Propagación de Errores](#ejercicio-3)
+* [Ejercicio 4: Reglas de Aluminio y Cobre](#ejercicio-4)
+* [Ejercicio 5 al 12: Mediciones de Calibre y Micrómetro](#ejercicio-5-al-12)
+
+---
+
+## Conceptos Clave
+
+* **Apreciación**:
+  Menor medida
+  distinguible.
+  $$A = \frac{p}{N}$$
+
+* **Sensibilidad**:
+  Relación de
+  movimiento.
+  $$S = \frac{\pi \cdot D}{p}$$
+
+* **Dilatación**:
+  Variación de
+  longitud por
+  temperatura:
+  $$\Delta L = L_0 \cdot \alpha \cdot \Delta T$$
+
+* **Medida Real**:
+  Corregida a
+  $$20$$
+  Unidad:
+  $$\text{ºC}$$
+  $$\text{Medida Real} = L_T - \Delta L$$
+
+* **Propagación**:
+  Error para
+  $$z = f(x, y)$$
+  $$\Delta z = \left| \frac{\partial f}{\partial x} \right| \cdot \Delta x + \left| \frac{\partial f}{\partial y} \right| \cdot \Delta y$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+1. Para controlar
+una varilla se ha
+utilizado un
+micrómetro que
+cuyo tambor tiene
+un diámetro de
+30 mm con 50
+divisiones y el
+tornillo
+micrométrico un
+paso de 0.5 mm,
+resultando un
+valor de 5.00 mm
+en la medida del
+diámetro. La
+varilla tiene
+una longitud
+aproximada de
+50 mm. Se desea
+conocer:
+a. Instrumento
+adecuado para
+medir la
+longitud de la
+varilla, de modo
+que el error
+cometido se
+igual al de su
+diámetro.
+b. Apreciación y
+sensibilidad de
+cada uno de los
+instrumentos
+utilizados.
+
+### Solución Paso a Paso
+
+#### A:
+Elección del
+instrumento:
+El error del
+diámetro es
+igual a la
+apreciación
+del primer
+micrómetro:
+$$0,01$$
+Unidad:
+$$\text{mm}$$
+Para medir la
+longitud de
+$$50$$
+Unidad:
+$$\text{mm}$$
+con el mismo
+error, se
+necesita un
+instrumento
+de igual
+apreciación.
+Se elige un
+micrómetro de
+exteriores con
+rango de
+$$50 - 75$$
+Unidad:
+$$\text{mm}$$
+y apreciación
+de
+$$0,01$$
+Unidad:
+$$\text{mm}$$
+
+#### B:
+Apreciación del
+micrómetro:
+$$A = \frac{p}{N}$$
+Donde:
+- Paso (p):
+$$p = 0,5$$
+Unidad:
+$$\text{mm}$$
+- Div. (N):
+$$N = 50$$
+Cálculo:
+$$A = \frac{0,5}{50}$$
+$$A = 0,01$$
+Unidad:
+$$\text{mm}$$
+
+Sensibilidad S
+del micrómetro:
+Definición 1
+(Relación de
+movimiento):
+$$S = \frac{\pi \cdot D}{p}$$
+Donde:
+- Diámetro (D):
+$$D = 30$$
+Unidad:
+$$\text{mm}$$
+Cálculo:
+$$S = \frac{\pi \cdot 30}{0,5}$$
+$$S = 60\pi$$
+$$S \approx 188,50$$
+
+Definición 2
+(Equivalente a
+apreciación):
+$$S = 0,01$$
+Unidad:
+$$\text{mm}$$
+
+Para el nuevo
+micrómetro de
+longitud:
+Mismo paso y
+divisiones.
+- Apreciación:
+$$0,01$$
+Unidad:
+$$\text{mm}$$
+- Sensibilidad:
+$$60\pi \approx 188,50$$
+(o
+$$0,01$$
+Unidad:
+$$\text{mm}$$
+).
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+2. La longitud de
+una pieza de
+aluminio se ha
+medido a 40°C,
+obteniéndose una
+medida de
+100.326 mm. Si
+su medida debe
+ser de 100 ± 0.1
+mm y el
+coeficiente de
+dilatación
+lineal del
+aluminio es de
+23.8·10^-6,
+indique si la
+pieza se
+encuentra dentro
+de tolerancia.
+
+### Solución Paso a Paso
+
+#### Datos:
+- T. inicial:
+$$T = 40$$
+Unidad:
+$$\text{ºC}$$
+- Temp. ref.:
+$$T_0 = 20$$
+Unidad:
+$$\text{ºC}$$
+- Medida a
+$$40$$
+Unidad:
+$$\text{ºC}$$
+es:
+$$L_T = 100,326$$
+Unidad:
+$$\text{mm}$$
+- Coeficiente:
+$$\alpha = 23,8 \cdot 10^{-6}$$
+Unidad:
+$$\text{ºC}^{-1}$$
+- Tolerancia:
+$$100,00 \pm 0,1$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 1:
+Diferencia de
+temperatura:
+$$\Delta T = T - T_0$$
+$$\Delta T = 40 - 20$$
+$$\Delta T = 20$$
+Unidad:
+$$\text{ºC}$$
+
+#### Paso 2:
+Cálculo de la
+dilatación:
+$$\Delta L = L_0 \cdot \alpha \cdot \Delta T$$
+Usando el
+valor nominal:
+$$L_0 \approx 100$$
+Unidad:
+$$\text{mm}$$
+Tenemos:
+$$\Delta L = 100 \cdot 23,8 \cdot 10^{-6} \cdot 20$$
+$$\Delta L = 0,0476$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 3:
+Medida real
+a
+$$20$$
+Unidad:
+$$\text{ºC}$$
+$$\text{Medida real} = L_T - \Delta L$$
+$$\text{Medida real} = 100,326 - 0,0476$$
+$$\text{Medida real} = 100,2784$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 4:
+Análisis de la
+tolerancia:
+Rango mín:
+$$100,00 - 0,1 = 99,90$$
+Unidad:
+$$\text{mm}$$
+Rango máx:
+$$100,00 + 0,1 = 100,10$$
+Unidad:
+$$\text{mm}$$
+Comparación:
+Dado que:
+$$100,2784 > 100,10$$
+La pieza está
+fuera de la
+tolerancia.
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+3. Para
+determinar el
+área lateral de
+un cilindro se ha
+medido su radio,
+10.2 mm y su
+altura, 42.5 mm,
+utilizando un pie
+de rey que
+aprecia décimas.
+¿Cuál será el
+error relativo
+de su
+superficie,
+expresado en %?
+¿Cómo deberá
+expresarse el
+valor de la
+superficie
+afectada de su
+error absoluto?
+
+### Solución Paso a Paso
+
+#### Datos:
+- Radio (r):
+$$r = 10,2$$
+Unidad:
+$$\text{mm}$$
+- Altura (h):
+$$h = 42,5$$
+Unidad:
+$$\text{mm}$$
+- Error de
+medida (regla
+o pie de rey):
+$$\Delta r = 0,1$$
+Unidad:
+$$\text{mm}$$
+$$\Delta h = 0,1$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 1:
+Valor nominal
+del área
+lateral (Al):
+$$A_L = 2\pi \cdot r \cdot h$$
+$$A_L = 2\pi \cdot 10,2 \cdot 42,5$$
+$$A_L = 867\pi$$
+$$A_L \approx 2723,76$$
+Unidad:
+$$\text{mm}^2$$
+
+#### Paso 2:
+Propagación de
+errores para
+error absoluto:
+$$\Delta A_L = \left| \frac{\partial A_L}{\partial r} \right| \cdot \Delta r + \left| \frac{\partial A_L}{\partial h} \right| \cdot \Delta h$$
+Derivadas
+parciales:
+$$\frac{\partial A_L}{\partial r} = 2\pi \cdot h$$
+$$\frac{\partial A_L}{\partial h} = 2\pi \cdot r$$
+Fórmula:
+$$\Delta A_L = 2\pi \cdot (h \cdot \Delta r + r \cdot \Delta h)$$
+Cálculo:
+$$\Delta A_L = 2\pi \cdot (42,5 \cdot 0,1 + 10,2 \cdot 0,1)$$
+$$\Delta A_L = 2\pi \cdot (4,25 + 1,02)$$
+$$\Delta A_L = 2\pi \cdot 5,27$$
+$$\Delta A_L = 10,54\pi$$
+$$\Delta A_L \approx 33,11$$
+Unidad:
+$$\text{mm}^2$$
+
+#### Paso 3:
+Error relativo
+(tanto por
+ciento):
+$$\epsilon_r = \frac{\Delta A_L}{A_L}$$
+$$\epsilon_r = \frac{33,11}{2723,76}$$
+$$\epsilon_r \approx 0,012157$$
+En porcentaje:
+$$\epsilon_r\% = \epsilon_r \cdot 100$$
+$$\epsilon_r\% \approx 1,22\%$$
+
+#### Paso 4:
+Expresión de
+la superficie:
+El error
+absoluto se
+redondea a
+una o dos
+cifras
+significativas.
+- Con dos
+cifras
+significativas:
+$$\Delta A_L \approx 33$$
+Unidad:
+$$\text{mm}^2$$
+$$A_L \approx 2724$$
+Unidad:
+$$\text{mm}^2$$
+Resultado:
+$$A_L = (2724 \pm 33)$$
+Unidad:
+$$\text{mm}^2$$
+
+- Sin redondear:
+$$A_L = (2723,8 \pm 33,1)$$
+Unidad:
+$$\text{mm}^2$$
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+4. Para medir la
+anchura se
+dispone de dos
+reglas graduadas
+una de aluminio
+y otra de cobre.
+Si el lugar de
+medición se
+encuentra a una
+temperatura de
+30 ºC, ¿con qué
+regla se
+realizará la
+medición de
+forma más
+exacta?
+
+### Solución Paso a Paso
+
+#### Datos:
+- Temp. ref.:
+$$T_0 = 20$$
+Unidad:
+$$\text{ºC}$$
+- Temp. med.:
+$$T = 30$$
+Unidad:
+$$\text{ºC}$$
+- Coef. Al:
+$$\alpha_{Al} = 23 \cdot 10^{-6}$$
+Unidad:
+$$\text{ºC}^{-1}$$
+- Coef. Cu:
+$$\alpha_{Cu} = 17 \cdot 10^{-6}$$
+Unidad:
+$$\text{ºC}^{-1}$$
+
+#### Paso 1:
+Dilatación de la
+regla de
+aluminio:
+$$L_{Al} = L_0 \cdot (1 + \alpha_{Al} \cdot \Delta T)$$
+Con:
+$$\Delta T = 10$$
+Unidad:
+$$\text{ºC}$$
+$$L_{Al} = L_0 \cdot (1 + 23 \cdot 10^{-5})$$
+Error cometido:
+$$E_{Al} = -23 \cdot 10^{-5} \cdot L_0$$
+
+#### Paso 2:
+Dilatación de la
+regla de cobre:
+$$L_{Cu} = L_0 \cdot (1 + \alpha_{Cu} \cdot \Delta T)$$
+$$L_{Cu} = L_0 \cdot (1 + 17 \cdot 10^{-5})$$
+Error cometido:
+$$E_{Cu} = -17 \cdot 10^{-5} \cdot L_0$$
+
+#### Paso 3:
+Comparación:
+El cobre tiene
+menor coef. de
+dilatación
+lineal, por lo
+que el error
+cometido en la
+medida es
+menor. La
+medida con la
+regla de cobre
+es más exacta.
+
+---
+
+## Ejercicio 5 al 12
+
+### Enunciado
+Transcription:
+Ejercicios de
+lectura de
+calibre y
+micrómetro
+a partir de
+simulador.
+
+### Solución Paso a Paso
+
+#### Respuestas:
+- Ejercicio 5:
+$$11,60 \pm 0,05$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 6:
+$$15,25 \pm 0,05$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 7:
+$$22,00 \pm 0,05$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 8:
+$$24,30 \pm 0,05$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 9:
+$$65,46 \pm 0,02$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 10:
+$$26,33 \pm 0,01$$
+Unidad:
+$$\text{mm}$$
+
+- Ejercicio 12:
+$$26,33 \pm 0,01$$
+Unidad:
+$$\text{mm}$$
