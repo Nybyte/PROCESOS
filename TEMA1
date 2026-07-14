@@ -1,0 +1,341 @@
+# Tema 1
+# Sistemas de
+# Fabricación
+
+## Índice
+* [Definición](#definición)
+* [Fábricas](#fábricas)
+* [Capacidad](#capacidad)
+* [Procesos](#procesos)
+* [Máquinas](#máquinas)
+* [Sistemas](#sistemas)
+* [Organización](#organización)
+* [Lean](#lean)
+
+---
+
+## Definición
+
+### Tecnología:
+Aplicación de
+la ciencia para
+proporcionar
+bienes a la
+sociedad.
+
+### Fabricación:
+
+#### Tecnol.:
+Procesos
+físicos y
+químicos que
+alteran la
+geometría,
+propiedades
+o aspecto del
+material para
+elaborar
+piezas o
+productos.
+
+#### Económico:
+Transformación
+de materiales
+en artículos
+de mayor valor
+mediante
+operaciones.
+
+---
+
+## Fábricas
+
+### Tipos de
+### Fábricas:
+
+- Bienes de
+  equipo:
+  Producen
+  materiales o
+  suministros
+  para otras
+  empresas.
+- Bienes de
+  consumo:
+  Productos
+  directos
+  para el
+  cliente.
+
+### Rangos de
+### Producción:
+
+- Baja:
+$$1$$
+a:
+$$100$$
+Unidades:
+$$\text{u/año}$$
+- Media:
+$$100$$
+a:
+$$10000$$
+Unidades:
+$$\text{u/año}$$
+- Alta:
+$$> 10000$$
+Unidades:
+$$\text{u/año}$$
+
+### Variedad:
+
+- Suave:
+  Modelos con
+  pocas
+  diferencias.
+  Ejemplo:
+  Línea de
+  vehículos.
+- Fuerte:
+  Modelos muy
+  diferentes y
+  pocas piezas
+  comunes.
+  Ejemplo:
+  A medida.
+
+---
+
+## Capacidad
+
+Factores de la
+eficacia:
+
+### Capacidad
+### Tecnológica:
+Conjunto de
+procesos que
+dispone la
+empresa.
+
+### Limitación
+### Física:
+Impuesta por
+el peso y
+tamaño del
+producto.
+
+### Capacidad de
+### Producción:
+Velocidad
+máxima de
+producción
+bajo ciertas
+condiciones.
+
+Se mide en:
+- Productos
+  homogéneos:
+  Caudal
+  máximo.
+- Productos
+  heterogéneos:
+  Horas de
+  operario.
+
+---
+
+## Procesos
+
+Operaciones
+que
+transforman
+materia prima.
+
+### Tipos:
+
+#### Conformado:
+Cambio de
+geometría por:
+- Moldeo:
+  Líquido o
+  semifluido.
+- Deformación:
+  Sólido
+  dúctil.
+- Mecanizado:
+  Arranque de
+  viruta.
+- Partículas:
+  Sinterizado
+  de polvo.
+
+#### Propied.:
+Mejora física
+sin alterar
+la forma.
+Ejemplo:
+Tratamientos
+térmicos.
+
+#### Superf.:
+Limpieza,
+tratamiento o
+recubrimiento
+externo.
+
+#### Montaje:
+Unión de
+componentes:
+- Permanente:
+  Soldadura o
+  adhesivos.
+- Mecánica:
+  Desmontable
+  (roscas) o
+  remaches.
+
+---
+
+## Máquinas
+
+Tipos de
+equipos:
+
+### Propósito
+### General:
+Flexible y
+adaptable.
+Usado para
+lotes o
+series
+cortas.
+Herramientas
+recambiables.
+
+### Propósito
+### Especial:
+Producción
+masiva de
+artículos.
+Herramientas
+integradas en
+el equipo.
+
+---
+
+## Sistemas
+
+Consiste en
+mano de obra,
+equipos y
+procesos.
+
+### Componentes:
+
+#### Física:
+Instalaciones
+y el lay-out
+en planta.
+
+#### Apoyo:
+Procedimiento
+para
+organizar la
+producción y
+calidad.
+
+#### Personal:
+Operarios e
+ingenieros.
+
+---
+
+## Organización
+
+Modelos de
+ingeniería:
+
+### Secuencial:
+Actividades
+consecutivas.
+Poca relación
+de grupos.
+Sujeto a
+penalización
+por retrasos.
+
+### Concurrente:
+Actividades
+simultáneas.
+Gran
+interrelación.
+Usa diseño
+iterativo.
+
+Estrategias:
+- DFM:
+  Diseño para
+  fabricación.
+- DFA:
+  Diseño para
+  montaje.
+- DFQ:
+  Diseño para
+  calidad.
+- DFS:
+  Diseño para
+  servicio.
+
+---
+
+## Lean
+
+Metodología
+de mejora
+continua para
+eliminar el
+despilfarro.
+
+### Cimientos:
+- Gestión
+  visual.
+- Estándares.
+- Nivelación
+  (Heijunka).
+
+### Pilares:
+
+#### Just in
+#### Time (JIT):
+Producir solo
+lo necesario,
+en el momento
+y cantidad
+justas.
+
+Elementos:
+- Takt time.
+- Sistema
+  PULL.
+- Kanban:
+  Tarjetas de
+  control.
+
+#### Jidoka:
+Autonomación.
+Control de
+defectos en
+la fuente.
+
+#### 5 S:
+- Seiri:
+  Selección.
+- Seiton:
+  Orden.
+- Seiso:
+  Limpieza.
+- Seiketsu:
+  Estandarizar.
+- Shitsuke:
+  Disciplina.
