@@ -1,0 +1,841 @@
+# Problemas
+# 1º Parcial
+
+## Índice
+* [Conceptos](#conceptos)
+* [Problema 1: Medición térmica de pieza de acero](#problema-1)
+* [Problema 2: Tolerancias y ajustes ISO](#problema-2)
+* [Problema 3: Moldeo en arena de cruz 3D](#problema-3)
+
+---
+
+## Conceptos
+
+* 1º Parcial:
+  Recopilación
+  de problemas
+  del primer
+  examen parcial
+  de Procesos
+  de
+  Fabricación.
+
+* Temas:
+  - Tema 3:
+    Metrología,
+    tolerancias
+    y ajustes.
+  - Tema 5:
+    Moldeo.
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcripción:
+Para medir la
+longitud total
+de la pieza de
+la figura
+adjunta, que es
+de acero
+inoxidable, se
+dispone de 2
+reglas
+graduadas una
+es de Al y la
+otra es de Cu.
+Las cotas que
+se indican en la
+pieza son cotas
+nominales a
+20°C, en mm y
+con un error
+absoluto de:
+$$\pm 0,05\text{ mm}$$
+
+a) Si el lugar
+de medición se
+encuentra una
+temperatura de:
+$$40\text{ °C}$$
+¿con qué regla
+se realizará la
+medición de
+forma más
+exacta?
+Justifique su
+respuesta
+numéricamente.
+b) Suponga
+ahora que la
+pieza es de Cu.
+Si se utiliza un
+pie de rey,
+para medir a:
+$$40\text{ °C}$$
+el diámetro
+de la cabeza
+octogonal y se
+obtiene que:
+$$60,15 \pm 0,05\text{ mm}$$
+¿Está la medida
+dentro del
+rango de
+tolerancias de
+su cota nominal
+o está fuera?
+Justifique su
+respuesta
+numéricamente.
+c) Calcule la
+superficie
+exterior, con
+su
+correspondiente
+error absoluto,
+de la cabeza
+octogonal (de
+diámetro 60 mm),
+sabiendo que
+cada cara plana
+mide:
+$$30,00 \pm 0,05\text{ mm}$$
+de alto y:
+$$22,95 \pm 0,05\text{ mm}$$
+de ancho.
+
+Coeficientes:
+$$\alpha_{\text{Al}} = 23\cdot 10^{-6}\text{ °C}^{-1}$$
+$$\alpha_{\text{Cu}} = 17\cdot 10^{-6}\text{ °C}^{-1}$$
+
+### Datos:
+- Longitud (L0):
+$$L_0 = 138$$
+Unidad:
+$$\text{mm}$$
+- Diámetro (D0):
+$$D_0 = 60$$
+Unidad:
+$$\text{mm}$$
+- Temp. ref:
+$$T_0 = 20$$
+Unidad:
+$$\text{°C}$$
+- Temp. med:
+$$T = 40$$
+Unidad:
+$$\text{°C}$$
+- Incremento T:
+$$\Delta T = 20$$
+Unidad:
+$$\text{°C}$$
+- Coef. acero:
+$$\alpha_{\text{acero}} \approx 17\cdot 10^{-6}$$
+Unidad:
+$$\text{°C}^{-1}$$
+- Coef. Al:
+$$\alpha_{\text{Al}} = 23\cdot 10^{-6}$$
+Unidad:
+$$\text{°C}^{-1}$$
+- Coef. Cu:
+$$\alpha_{\text{Cu}} = 17\cdot 10^{-6}$$
+Unidad:
+$$\text{°C}^{-1}$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado a:
+Elección de la
+regla.
+
+La longitud
+total nominal
+a 20°C es:
+$$L_0 = 108 + 30 = 138\text{ mm}$$
+
+##### Regla Al:
+$$L_{40} = L_0 \cdot (1 + \alpha_{\text{Al}} \cdot \Delta T)$$
+$$L_{40} = 138 \cdot (1 + 23\cdot 10^{-6} \cdot 20)$$
+$$L_{40} \approx 138,063$$
+Unidad:
+$$\text{mm}$$
+
+##### Regla Cu:
+$$L_{40} = L_0 \cdot (1 + \alpha_{\text{Cu}} \cdot \Delta T)$$
+$$L_{40} = 138 \cdot (1 + 17\cdot 10^{-6} \cdot 20)$$
+$$L_{40} \approx 138,047$$
+Unidad:
+$$\text{mm}$$
+
+##### Elección:
+Se comete
+menos error (y
+por tanto se
+tiene más
+exactitud) con
+la regla de
+Cobre (Cu), ya
+que su
+dilatación
+coincide con
+la de la pieza
+de acero.
+
+---
+
+#### Apartado b:
+Rango de
+tolerancias.
+
+##### Tolerancia:
+El rango
+admisible a
+20°C es:
+$$[59,95\text{ mm}, 60,05\text{ mm}]$$
+
+##### Medido:
+Rango medido a
+40°C es:
+$$[60,10\text{ mm}, 60,20\text{ mm}]$$
+
+##### Relación:
+$$L_{40} = L_{20} \cdot (1 + \alpha_{\text{Cu}} \cdot \Delta T)$$
+
+##### Corregido:
+$$L_{20} = \frac{L_{40}}{1 + \alpha_{\text{Cu}} \cdot \Delta T}$$
+$$L_{20} = \frac{60,15}{1 + 17\cdot 10^{-6} \cdot 20}$$
+$$L_{20} \approx 60,130$$
+Unidad:
+$$\text{mm}$$
+
+##### Límites:
+El valor real
+estimado:
+$$60,130\text{ mm}$$
+es superior al
+límite máximo:
+$$60,050\text{ mm}$$
+
+Solución:
+La medida está
+FUERA del
+rango de
+tolerancias. La
+pieza es
+defectuosa.
+
+---
+
+#### Apartado c:
+Superficie y
+error absoluto.
+
+Cabeza
+octogonal (8
+caras).
+
+- Alto (h):
+$$h = 30,00 \pm 0,05\text{ mm}$$
+- Ancho (a):
+$$a = 22,95 \pm 0,05\text{ mm}$$
+
+##### Superf.:
+$$S = 8 \cdot a \cdot h$$
+$$S = 8 \cdot 22,95 \cdot 30,00$$
+$$S = 5508$$
+Unidad:
+$$\text{mm}^2$$
+
+##### Err. rel:
+- Del ancho:
+$$E_{r,a} = \frac{0,05}{30,00}$$
+$$E_{r,a} \approx 0,00166$$
+
+- Del alto:
+$$E_{r,h} = \frac{0,05}{22,95}$$
+$$E_{r,h} \approx 0,002178$$
+
+- Del total:
+$$E_{r,S} = E_{r,a} + E_{r,h}$$
+$$E_{r,S} \approx 0,003845$$
+
+##### Error:
+$$\Delta S = E_{r,S} \cdot S$$
+$$\Delta S = 0,003845 \cdot 5508$$
+$$\Delta S \approx 21,18$$
+Unidad:
+$$\text{mm}^2$$
+
+Solución:
+Superficie:
+$$5508 \pm 21,18$$
+Unidad:
+$$\text{mm}^2$$
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcripción:
+Tenemos dos
+ajustes entre un
+macho y una
+hembra al que le
+corresponde un
+diámetro nominal
+de 95,00 mm. El
+primer ajuste es
+H7/h6 y el
+segundo ajuste
+es H7/f6. Para
+cada uno de
+ellos:
+
+a) Calcule el
+valor de la
+tolerancia del
+eje, del agujero
+y del ajuste.
+b) Represente
+gráficamente la
+tolerancia e
+indique el tipo
+de ajuste.
+c) Calcule el
+Juego máximo y
+el Juego mínimo.
+
+Para el cálculo
+de "i", utilice
+el grupo de
+cotas:
+$$80 < 95 < 120\text{ mm}$$
+$$f(6) = 10i$$
+$$f(7) = 16i$$
+
+### Datos:
+- Diámetro (D):
+$$D = 95,00$$
+Unidad:
+$$\text{mm}$$
+- Rango D:
+$$80 < D \le 120$$
+Unidad:
+$$\text{mm}$$
+- Calidad 6:
+$$IT6 = 10i$$
+- Calidad 7:
+$$IT7 = 16i$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Unidad i:
+Cálculo de la
+unidad de
+tolerancia.
+
+##### Media Dg:
+$$D_g = \sqrt{D_1 \cdot D_2}$$
+$$D_g = \sqrt{80 \cdot 120}$$
+$$D_g \approx 97,98$$
+Unidad:
+$$\text{mm}$$
+
+##### Unidad i:
+$$i = 0,45 \cdot \sqrt[3]{D_g} + 0,001 \cdot D_g$$
+$$i = 0,45 \cdot \sqrt[3]{97,98} + 0,001 \cdot 97,98$$
+$$i \approx 2,1725$$
+Unidad:
+$$\mu\text{m}$$
+
+##### Tolerancias:
+- Calidad 6:
+$$IT6 = 10 \cdot i$$
+$$IT6 = 21,725$$
+$$IT6 \approx 22\ \mu\text{m}$$
+$$IT6 = 0,022$$
+Unidad:
+$$\text{mm}$$
+
+- Calidad 7:
+$$IT7 = 16 \cdot i$$
+$$IT7 = 34,76$$
+$$IT7 \approx 35\ \mu\text{m}$$
+$$IT7 = 0,035$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+#### Primer ajuste:
+Ajuste H7/h6.
+
+##### Agujero H7:
+Posición H:
+$$EI = 0$$
+Unidad:
+$$\text{mm}$$
+$$ES = EI + IT7$$
+$$ES = +0,035$$
+Unidad:
+$$\text{mm}$$
+
+Tolerancia (TA):
+$$T_A = 0,035$$
+Unidad:
+$$\text{mm}$$
+
+Límites (A):
+$$[95,000\text{ mm}, 95,035\text{ mm}]$$
+
+##### Eje h6:
+Posición h:
+$$es = 0$$
+Unidad:
+$$\text{mm}$$
+$$ei = es - IT6$$
+$$ei = -0,022$$
+Unidad:
+$$\text{mm}$$
+
+Tolerancia (Te):
+$$T_e = 0,022$$
+Unidad:
+$$\text{mm}$$
+
+Límites (e):
+$$[94,978\text{ mm}, 95,000\text{ mm}]$$
+
+##### Ajuste:
+Tolerancia de
+ajuste (Taj):
+$$T_{\text{ajuste}} = T_A + T_e$$
+$$T_{\text{ajuste}} = 0,035 + 0,022$$
+$$T_{\text{ajuste}} = 0,057$$
+Unidad:
+$$\text{mm}$$
+
+##### Gráfico:
+Esquema H7/h6:
+```
++35 |---| H7
+    | 35|
+  0 |---|====
+    |---|
+    | 22| h6
+-22 |---|
+```
+
+##### Tipo:
+Ajuste con Juego
+(móvil). Al
+coincidir en la
+cota nominal,
+es deslizante
+mínimo.
+
+##### Juegos:
+- Máximo (Jmax):
+$$J_{\text{máx}} = ES - ei$$
+$$J_{\text{máx}} = 0,035 - (-0,022)$$
+$$J_{\text{máx}} = 0,057$$
+Unidad:
+$$\text{mm}$$
+
+- Mínimo (Jmin):
+$$J_{\text{mín}} = EI - es$$
+$$J_{\text{mín}} = 0 - 0$$
+$$J_{\text{mín}} = 0$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+#### Segundo ajuste:
+Ajuste H7/f6.
+
+##### Agujero H7:
+Queda igual:
+$$EI = 0$$
+$$ES = +0,035$$
+$$T_A = 0,035$$
+Unidad:
+$$\text{mm}$$
+Límites (A):
+$$[95,000\text{ mm}, 95,035\text{ mm}]$$
+
+##### Eje f6:
+Posición f:
+$$es = -36\ \mu\text{m}$$
+$$es = -0,036$$
+Unidad:
+$$\text{mm}$$
+$$ei = es - IT6$$
+$$ei = -0,036 - 0,022$$
+$$ei = -0,058$$
+Unidad:
+$$\text{mm}$$
+
+Tolerancia (Te):
+$$T_e = 0,022$$
+Unidad:
+$$\text{mm}$$
+
+Límites (e):
+$$[94,942\text{ mm}, 94,964\text{ mm}]$$
+
+##### Ajuste:
+Tolerancia de
+ajuste (Taj):
+$$T_{\text{ajuste}} = T_A + T_e$$
+$$T_{\text{ajuste}} = 0,035 + 0,022$$
+$$T_{\text{ajuste}} = 0,057$$
+Unidad:
+$$\text{mm}$$
+
+##### Gráfico:
+Esquema H7/f6:
+```
++35 |---| H7
+    | 35|
+  0 |---|====
+
+-36     |---|
+        | 22| f6
+-58     |---|
+```
+
+##### Tipo:
+Ajuste con Juego
+puro (libre).
+Hay holgura
+siempre.
+
+##### Juegos:
+- Máximo (Jmax):
+$$J_{\text{máx}} = ES - ei$$
+$$J_{\text{máx}} = 0,035 - (-0,058)$$
+$$J_{\text{máx}} = 0,093$$
+Unidad:
+$$\text{mm}$$
+
+- Mínimo (Jmin):
+$$J_{\text{mín}} = EI - es$$
+$$J_{\text{mín}} = 0 - (-0,036)$$
+$$J_{\text{mín}} = 0,036$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcripción:
+Se pretende
+obtener una
+pieza de acero
+como la del
+croquis
+adjunto, cuyas
+aristas son
+todas
+iguales y miden
+2 cm,
+realizando un
+proceso de
+moldeo en arena
+por gravedad y
+despreciando el
+rozamiento.
+Esto implica
+que su volumen
+total será de
+152 cm3 y su
+área exterior
+total será de
+216 cm2.
+Realizar los
+siguientes
+apartados:
+
+a) Diseñar una
+caja de moldeo
+formada por 2
+semi-cajas, de
+igual altura,
+que incluya un
+bebedero que
+alimente la
+pieza a la
+altura de su
+cara superior,
+que tenga 12 cm
+de altura y una
+sección en su
+punto bajo de
+0,5 cm2. La
+pieza debe
+quedar centrada
+entre las dos
+semi-cajas y
+desde cualquier
+punto de la
+pieza a la
+pared de la
+caja debemos
+tener al menos
+6 cm de arena.
+Dibuje el
+croquis de la
+sección de la
+caja de moldeo
+con la pieza,
+el bebedero y
+todas las cotas
+necesarias para
+su definición.
+b) Calcule el
+tiempo mínimo
+requerido, para
+el llenado
+completo de la
+pieza y el
+sistema de
+alimentación.
+Considere que
+el sistema de
+alimentación
+tiene un
+volumen del 15%
+del volumen de
+la pieza a
+obtener.
+c) El tiempo de
+solidificación
+de la pieza
+considerando
+B = 0,56
+min/cm2 y n = 2.
+d) Cómo varía
+el tiempo de
+solidificación
+si la pieza
+fuese un cubo
+de lado 6 cm.
+
+### Datos:
+- Volumen (Vp):
+$$V_p = 152$$
+Unidad:
+$$\text{cm}^3$$
+- Área (Ap):
+$$A_p = 216$$
+Unidad:
+$$\text{cm}^2$$
+- Arista cubo:
+$$a = 2$$
+Unidad:
+$$\text{cm}$$
+- Altura (h):
+$$h = 12$$
+Unidad:
+$$\text{cm}$$
+- Sección Abajo:
+$$A_{\text{bajo}} = 0,5$$
+Unidad:
+$$\text{cm}^2$$
+- Sobretasa:
+$$\text{Extra} = 15\%$$
+- Coeficiente B:
+$$B = 0,56$$
+Unidad:
+$$\text{min/cm}^2$$
+- Exponente:
+$$n = 2$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado a:
+Caja de moldeo.
+
+##### Altura:
+Pieza centrada.
+Su alto es:
+$$3 \cdot 2 = 6\text{ cm}$$
+
+Sobresale 3 cm
+arriba y 3 cm
+abajo.
+
+Altura
+semi-caja:
+$$H_{\text{semi}} = 3 + 6$$
+$$H_{\text{semi}} = 9$$
+Unidad:
+$$\text{cm}$$
+
+Alto total:
+$$18$$
+Unidad:
+$$\text{cm}$$
+
+##### Planta:
+$$\text{Ancho} = 6 + 6 + 6$$
+$$\text{Ancho} = 18$$
+Unidad:
+$$\text{cm}$$
+$$\text{Largo} = 18$$
+Unidad:
+$$\text{cm}$$
+
+##### Bebedero:
+Alimenta en la
+cara superior
+(3 cm sobre
+la línea de
+partición).
+
+La arena
+superior mide
+6 cm.
+
+Sobresale por
+encima de la
+caja:
+$$S_b = 12 - 6$$
+$$S_b = 6$$
+Unidad:
+$$\text{cm}$$
+
+##### Croquis:
+```
+  +--+ < Copa
+  |  | 6cm (sb)
++-+--+-+ ------
+| |  | | 6cm a.
+| +--+ | 3cm p.
+| |  | | ------
+| |  | | 3cm p.
+| +--+ | 6cm a.
++------+ ------
+```
+
+---
+
+#### Apartado b:
+Tiempo de
+llenado.
+
+##### Velocidad:
+Teorema de
+Torricelli:
+$$v = \sqrt{2 \cdot g \cdot h}$$
+$$v = \sqrt{2 \cdot 981 \cdot 12}$$
+$$v \approx 153,44$$
+Unidad:
+$$\text{cm/s}$$
+
+##### Caudal:
+$$Q = A_{\text{bajo}} \cdot v$$
+$$Q = 0,5 \cdot 153,44$$
+$$Q = 76,72$$
+Unidad:
+$$\text{cm}^3\text{/s}$$
+
+##### Vol. tot:
+$$V_{\text{total}} = 1,15 \cdot V_p$$
+$$V_{\text{total}} = 1,15 \cdot 152$$
+$$V_{\text{total}} = 174,8$$
+Unidad:
+$$\text{cm}^3$$
+
+##### Tiempo:
+$$t_{\text{llenado}} = \frac{V_{\text{total}}}{Q}$$
+$$t_{\text{llenado}} = \frac{174,8}{76,72}$$
+$$t_{\text{llenado}} \approx 2,28$$
+Unidad:
+$$\text{s}$$
+
+---
+
+#### Apartado c:
+Solidificación.
+
+##### Módulo p:
+$$M_p = \frac{V_p}{A_p}$$
+$$M_p = \frac{152}{216}$$
+$$M_p \approx 0,7037$$
+Unidad:
+$$\text{cm}$$
+
+##### Tiempo:
+Chvorinov:
+$$t_s = B \cdot M_p^2$$
+$$t_s = 0,56 \cdot 0,7037^2$$
+$$t_s \approx 0,277$$
+Unidad:
+$$\text{min}$$
+(Equivale a:
+$$16,64$$
+Unidad:
+$$\text{s}$$
+).
+
+---
+
+#### Apartado d:
+Cubo de 6 cm.
+
+##### Vol. cubo:
+$$V_{\text{cubo}} = 6^3$$
+$$V_{\text{cubo}} = 216$$
+Unidad:
+$$\text{cm}^3$$
+
+##### Área cubo:
+$$A_{\text{cubo}} = 6 \cdot 6^2$$
+$$A_{\text{cubo}} = 216$$
+Unidad:
+$$\text{cm}^2$$
+
+##### Mod. cubo:
+$$M_{\text{cubo}} = \frac{216}{216}$$
+$$M_{\text{cubo}} = 1$$
+Unidad:
+$$\text{cm}$$
+
+##### Tiempo (tsc):
+$$t_{s,\text{cubo}} = B \cdot M_{\text{cubo}}^2$$
+$$t_{s,\text{cubo}} = 0,56 \cdot 1^2$$
+$$t_{s,\text{cubo}} = 0,56$$
+Unidad:
+$$\text{min}$$
+(Equivale a:
+$$33,6$$
+Unidad:
+$$\text{s}$$
+).
+
+##### Variación:
+$$\Delta t_s = t_{s,\text{cubo}} - t_s$$
+$$\Delta t_s = 0,56 - 0,277$$
+$$\Delta t_s = +0,283$$
+Unidad:
+$$\text{min}$$
+
+Aumenta un
+$$102\%$$.
+
