@@ -1,0 +1,895 @@
+# Boletín Tema 5: Conformado por Moldeo
+
+## Índice
+* [Conceptos Clave](#conceptos-clave)
+* [Problema 1: Energía Calorífica de Colada](#problema-1)
+* [Problema 2: Tiempos de Llenado y Solidificación](#problema-2)
+* [Problema 3: Reducción de Espesor en Disco](#problema-3)
+* [Problema 4: Dimensiones de la Mazarota](#problema-4)
+* [Problema 5: Diseño Completo de Moldeo](#problema-5)
+
+---
+
+## Conceptos Clave
+
+* **Energía de Colada**:
+  Energía total
+  necesaria para
+  calentar y
+  fundir el
+  metal:
+  $$H = \rho \cdot V \cdot [C_s \cdot (T_m - T_0) + H_f + C_l \cdot (T_c - T_m)]$$
+  Donde:
+  - Masa:
+    $$\rho \cdot V = m$$
+  - Calor Cs:
+    $$C_s$$
+  - Calor Hf:
+    $$H_f$$
+  - Calor Cl:
+    $$C_l$$
+
+* **Caudal de Llenado**:
+  $$Q = A_b \cdot \sqrt{2g \cdot h_b}$$
+
+* **Regla Chvorinov**:
+  $$t_s = B \cdot \left(\frac{V}{A}\right)^n$$
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+PROBLEMA 1:
+Calcule la
+energía
+calorífica
+requerida para
+colar 1 kg de
+acero en un
+proceso de
+moldeo en arena.
+Para ello se
+utiliza un
+horno eléctrico
+de arco siendo
+la temperatura
+de fusión Tm
+del acero
+empleado = 1420
+(ºC) y se hace
+el colado en el
+molde a Tc =
+1550 (ºC), sin
+producir
+turbulencias.
+
+Datos:
+rho del acero
+empleado = 7850
+(kg/m^3)
+Cs del acero
+empleado = 477
+(J/kg·ºC)
+T0 = 22 (ºC),
+Tc = 1550 (ºC)
+Hf del acero
+empleado = 25
+(J/kg)
+Cl del acero
+empleado = 710
+(J/kg·ºC)
+
+### Solución Paso a Paso
+
+#### Datos:
+- Masa (m):
+$$m = 1$$
+Unidad:
+$$\text{kg}$$
+- Calor esp.
+sólido (Cs):
+$$C_s = 477$$
+Unidad:
+$$\text{J/kg}\cdot\text{ºC}$$
+- T. fusión:
+$$T_m = 1420$$
+Unidad:
+$$\text{ºC}$$
+- T. inicial:
+$$T_0 = 22$$
+Unidad:
+$$\text{ºC}$$
+- Calor latente
+fusión (Hf):
+$$H_f = 25$$
+Unidad:
+$$\text{J/kg}$$
+- Calor esp.
+líquido (Cl):
+$$C_l = 710$$
+Unidad:
+$$\text{J/kg}\cdot\text{ºC}$$
+- T. colada:
+$$T_c = 1550$$
+Unidad:
+$$\text{ºC}$$
+
+#### Paso 1:
+Energía para
+calentar el
+sólido hasta
+fusión:
+$$Q_s = C_s \cdot (T_m - T_0)$$
+$$Q_s = 477 \cdot (1420 - 22)$$
+$$Q_s = 477 \cdot 1398$$
+$$Q_s = 666846$$
+Unidad:
+$$\text{J/kg}$$
+
+#### Paso 2:
+Energía para
+el cambio de
+fase (fusión):
+$$Q_f = H_f$$
+$$Q_f = 25$$
+Unidad:
+$$\text{J/kg}$$
+
+#### Paso 3:
+Energía para
+calentar el
+líquido hasta
+temperatura
+de colada (Tc):
+$$Q_l = C_l \cdot (T_c - T_m)$$
+$$Q_l = 710 \cdot (1550 - 1420)$$
+$$Q_l = 710 \cdot 130$$
+$$Q_l = 92300$$
+Unidad:
+$$\text{J/kg}$$
+
+#### Paso 4:
+Cálculo de la
+energía total
+(H):
+$$H = m \cdot (Q_s + Q_f + Q_l)$$
+$$H = 1 \cdot (666846 + 25 + 92300)$$
+$$H = 1 \cdot 759171$$
+$$H = 759171$$
+Unidad:
+$$\text{J}$$
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+PROBLEMA 2:
+Se pretende
+obtener una
+pieza cilíndrica
+de volumen 1000
+cm^3 y 10 cm de
+altura, en un
+molde de arena,
+llenado por
+gravedad, en el
+cual se ha
+diseñado un
+bebedero de
+colada de 5cm de
+longitud y
+sección 1cm^2 en
+el comienzo de
+la pieza.
+Determinar.
+1. El tiempo
+mínimo
+requerido, en
+ausencia de
+fricciones, para
+el llenado de la
+pieza.
+2. El tiempo de
+solidificación
+de la pieza
+considerando B=
+0,46 min/cm^2 y
+n= 2.
+3. Como varían
+los tiempos si
+la pieza fuese
+un cubo del
+mismo volumen.
+
+### Solución Paso a Paso
+
+#### Datos:
+- Vol. pieza V:
+$$V_p = 1000$$
+Unidad:
+$$\text{cm}^3$$
+- Altura (h):
+$$h_p = 10$$
+Unidad:
+$$\text{cm}$$
+- Bebedero
+longitud (h_b):
+$$h_b = 5$$
+Unidad:
+$$\text{cm}$$
+- Bebedero
+sección (A_b):
+$$A_b = 1$$
+Unidad:
+$$\text{cm}^2$$
+- Constante B:
+$$B = 0,46$$
+Unidad:
+$$\text{min/cm}^2$$
+- Exponente n:
+$$n = 2$$
+- Gravedad g:
+$$g = 981$$
+Unidad:
+$$\text{cm/s}^2$$
+
+#### Apartado 1:
+Caudal de
+llenado (Q):
+$$Q = A_b \cdot v$$
+Donde velocidad
+de salida es:
+$$v = \sqrt{2g \cdot h_b}$$
+$$v = \sqrt{2 \cdot 981 \cdot 5}$$
+$$v = \sqrt{9810}$$
+$$v \approx 99,05$$
+Unidad:
+$$\text{cm/s}$$
+
+Caudal:
+$$Q = 1 \cdot 99,05$$
+$$Q \approx 99,05$$
+Unidad:
+$$\text{cm}^3\text{/s}$$
+
+Tiempo de
+llenado (tl):
+$$t_l = \frac{V_p}{Q}$$
+$$t_l = \frac{1000}{99,05}$$
+$$t_l \approx 10,09$$
+Unidad:
+$$\text{s}$$
+
+#### Apartado 2:
+Regla de
+Chvorinov:
+$$t_s = B \cdot \left(\frac{V}{A}\right)^2$$
+
+Radio (r) del
+cilindro:
+$$V = \pi r^2 \cdot h_p$$
+$$1000 = \pi r^2 \cdot 10$$
+$$r^2 = \frac{100}{\pi}$$
+$$r = \sqrt{\frac{100}{\pi}}$$
+$$r \approx 5,64$$
+Unidad:
+$$\text{cm}$$
+
+Área del
+cilindro (Ac):
+$$A_c = 2\pi r^2 + 2\pi r \cdot h_p$$
+$$A_c = 2\pi \cdot 5,64^2 + 2\pi \cdot 5,64 \cdot 10$$
+$$A_c \approx 200 + 354,37$$
+$$A_c \approx 554,37$$
+Unidad:
+$$\text{cm}^2$$
+
+Relación V/A:
+$$\frac{V}{A_c} = \frac{1000}{554,37}$$
+$$\frac{V}{A_c} \approx 1,80$$
+Unidad:
+$$\text{cm}$$
+
+Tiempo de
+solidificación
+(ts):
+$$t_s = 0,46 \cdot 1,80^2$$
+$$t_s = 0,46 \cdot 3,24$$
+$$t_s \approx 1,49$$
+Unidad:
+$$\text{min}$$
+
+#### Apartado 3:
+Si la pieza es
+un cubo de:
+$$V = 1000$$
+Unidad:
+$$\text{cm}^3$$
+
+Lado del cubo:
+$$L = \sqrt[3]{1000}$$
+$$L = 10$$
+Unidad:
+$$\text{cm}$$
+
+Área del cubo:
+$$A_q = 6 \cdot L^2$$
+$$A_q = 6 \cdot 10^2$$
+$$A_q = 600$$
+Unidad:
+$$\text{cm}^2$$
+
+Relación V/A:
+$$\frac{V}{A_q} = \frac{1000}{600}$$
+$$\frac{V}{A_q} \approx 1,67$$
+Unidad:
+$$\text{cm}$$
+
+Nuevos tiempos:
+- Llenado (tl):
+Se mantiene
+igual al ser el
+mismo volumen
+y caudal.
+$$t_l \approx 10,09$$
+Unidad:
+$$\text{s}$$
+
+- Solidificac.
+del cubo:
+$$t_{s,cubo} = 0,46 \cdot 1,67^2$$
+$$t_{s,cubo} = 0,46 \cdot 2,7889$$
+$$t_{s,cubo} \approx 1,28$$
+Unidad:
+$$\text{min}$$
+
+Conclusión:
+El cubo
+solidifica
+más rápido por
+tener mayor
+área disipando
+el calor mejor.
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+PROBLEMA 3:
+Se pretende
+obtener una
+pieza en forma
+de disco, de
+modo que se
+mantenga su
+diámetro como
+cota funcional
+en 450mm. Se
+moldea con un
+espesor de 50mm,
+pero se comprueba
+que es necesario
+disminuir el
+tiempo de
+solidificación
+al 75% del
+empleado para
+dicho espesor.
+¿Cuáles son las
+dimensiones
+finales del
+disco que se
+adapta a dicho
+requerimiento?
+B = 3,4 min/cm^2,
+n = 2
+
+### Solución Paso a Paso
+
+#### Datos:
+- Diámetro (D):
+$$D = 45$$
+Unidad:
+$$\text{cm}$$
+- Radio (r):
+$$r = 22,5$$
+Unidad:
+$$\text{cm}$$
+- Espesor
+inicial (e1):
+$$e_1 = 5$$
+Unidad:
+$$\text{cm}$$
+- Constante B:
+$$B = 3,4$$
+Unidad:
+$$\text{min/cm}^2$$
+- Exponente n:
+$$n = 2$$
+- Nuevo t_s:
+$$t_{s2} = 0,75 \cdot t_{s1}$$
+
+#### Paso 1:
+Módulo de la
+pieza inicial
+(M1):
+$$M_1 = \frac{V_1}{A_1}$$
+
+Como:
+$$V_1 = \pi r^2 \cdot e_1$$
+$$A_1 = 2\pi r^2 + 2\pi r \cdot e_1$$
+
+El módulo se
+simplifica:
+$$M_1 = \frac{r \cdot e_1}{2r + 2e_1}$$
+$$M_1 = \frac{22,5 \cdot 5}{2 \cdot 22,5 + 2 \cdot 5}$$
+$$M_1 = \frac{112,5}{45 + 10}$$
+$$M_1 = \frac{112,5}{55}$$
+$$M_1 \approx 2,045$$
+Unidad:
+$$\text{cm}$$
+
+#### Paso 2:
+Nuevo tiempo:
+$$t_{s2} = 0,75 \cdot t_{s1}$$
+
+Como el tiempo
+es proporcional
+al cuadrado del
+módulo:
+$$\frac{M_2^2}{M_1^2} = 0,75$$
+$$M_2 = M_1 \cdot \sqrt{0,75}$$
+$$M_2 = 2,045 \cdot 0,866$$
+$$M_2 \approx 1,771$$
+Unidad:
+$$\text{cm}$$
+
+#### Paso 3:
+Cálculo del
+nuevo espesor
+(e2):
+$$M_2 = \frac{r \cdot e_2}{2r + 2e_2}$$
+$$1,771 = \frac{22,5 \cdot e_2}{45 + 2e_2}$$
+$$1,771 \cdot (45 + 2e_2) = 22,5 \cdot e_2$$
+$$79,695 + 3,542 \cdot e_2 = 22,5 \cdot e_2$$
+$$79,695 = 18,958 \cdot e_2$$
+$$e_2 = \frac{79,695}{18,958}$$
+$$e_2 \approx 4,204$$
+Unidad:
+$$\text{cm}$$
+(Equivale a
+$$42,04$$
+Unidad:
+$$\text{mm}$$
+).
+
+Conclusión:
+El diámetro
+sigue siendo
+$$450$$
+Unidad:
+$$\text{mm}$$
+y el espesor
+se reduce a
+$$42,04$$
+Unidad:
+$$\text{mm}$$
+.
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+PROBLEMA 4:
+Se pretende
+obtener una
+pieza en un
+molde de arena,
+garantizando el
+aporte de
+material con una
+mazarota tal y
+como se indica
+en el croquis.
+Calcular las
+dimensiones
+necesarias de la
+mazarota
+teniendo en
+cuenta que el
+tiempo de
+solidificación
+de la mazarota
+es un 25 %
+superior al de
+la pieza.
+Datos: n = 2
+
+### Solución Paso a Paso
+
+#### Datos:
+- Dimensiones:
+$$16 \times 8 \times 2$$
+Unidad:
+$$\text{cm}$$
+- Mazarota H=2D:
+$$H = 2D = 4R$$
+- Incremento:
+$$t_m = 1,25 \cdot t_p$$
+
+#### Paso 1:
+Módulo de la
+pieza (Mp):
+$$V_p = 16 \cdot 8 \cdot 2$$
+$$V_p = 256$$
+Unidad:
+$$\text{cm}^3$$
+
+$$S_p = 2 \cdot (16 \cdot 8 + 16 \cdot 2 + 8 \cdot 2)$$
+$$S_p = 2 \cdot (128 + 32 + 16)$$
+$$S_p = 2 \cdot 176$$
+$$S_p = 352$$
+Unidad:
+$$\text{cm}^2$$
+
+$$M_p = \frac{V_p}{S_p}$$
+$$M_p = \frac{256}{352}$$
+$$M_p \approx 0,727$$
+Unidad:
+$$\text{cm}$$
+
+#### Paso 2:
+Módulo de la
+mazarota (Mm):
+$$t_m = 1,25 \cdot t_p$$
+
+Como el tiempo
+es proporcional
+al cuadrado del
+módulo:
+$$M_m^2 = 1,25 \cdot M_p^2$$
+$$M_m = M_p \cdot \sqrt{1,25}$$
+$$M_m = 0,727 \cdot 1,118$$
+$$M_m \approx 0,813$$
+Unidad:
+$$\text{cm}$$
+
+#### Paso 3:
+Cálculo de las
+dimensiones de
+la mazarota:
+
+- Caso A
+(Ignorando área
+de contacto):
+$$V_m = \pi R^2 \cdot H = 4\pi R^3$$
+$$S_m = 2\pi R^2 + 2\pi R \cdot H = 10\pi R^2$$
+$$M_m = \frac{V_m}{S_m} = 0,4R$$
+$$0,4R = 0,813$$
+$$R = 2,03$$
+Unidad:
+$$\text{cm}$$
+$$D = 4,06$$
+Unidad:
+$$\text{cm}$$
+$$H = 8,12$$
+Unidad:
+$$\text{cm}$$
+
+- Caso B
+(Restando área
+de contacto):
+$$V_m = 4\pi R^3$$
+$$S_m = \pi R^2 + 2\pi R \cdot H = 9\pi R^2$$
+$$M_m = \frac{V_m}{S_m} = \frac{4}{9} R \approx 0,444 R$$
+$$0,444 R \approx 0,813$$
+$$R \approx 1,83$$
+Unidad:
+$$\text{cm}$$
+$$D \approx 3,66$$
+Unidad:
+$$\text{cm}$$
+$$H \approx 7,32$$
+Unidad:
+$$\text{cm}$$
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcription:
+PROBLEMA 5.
+Se desea
+fabricar una
+pieza como la
+del croquis
+adjunto en
+moldeo en arena,
+por gravedad,
+utilizando dos
+semicajas de la
+misma altura,
+un solo modelo,
+una mazarota
+ciega sobre el
+canal de
+alimentación
+principal y un
+noyo adecuado.
+Se emplea un
+bebedero cónico
+que tiene en su
+punto mas bajo
+una sección de
+1cm2 y una
+velocidad
+máxima de 114
+m/min. Se
+considera que
+el rozamiento
+es despreciable.
+Calcular:
+1. Altura mínima
+necesaria de
+las cajas para
+el correcto
+funcionamiento.
+2. Volumen mínimo
+de la mazarota
+si el material
+de fundición
+tiene un
+coeficiente de
+contracción de
+4,3%. ¿Cabe
+dentro de la
+caja calculada?
+3. Tiempo de
+solidificación
+de la mazarota
+si este es un
+50% superior al
+tiempo de
+llenado.
+Datos: n=2,
+B=0,46 min/cm^2
+
+### Solución Paso a Paso
+
+#### Datos:
+- Medidas:
+$$50 + 100 = 150$$
+Unidad:
+$$\text{mm}$$
+- Sección A_b:
+$$A_b = 1$$
+Unidad:
+$$\text{cm}^2$$
+- Vel. máx v:
+$$v = 114$$
+Unidad:
+$$\text{m/min}$$
+- Contracción:
+$$c = 4,3\%$$
+- Constante B:
+$$B = 0,46$$
+Unidad:
+$$\text{min/cm}^2$$
+- Exponente n:
+$$n = 2$$
+
+#### Apartado 1:
+La línea de
+partición está
+en el eje del
+agujero:
+- Parte superior
+de la pieza:
+$$50$$
+Unidad:
+$$\text{mm}$$
+$$= 5$$
+Unidad:
+$$\text{cm}$$
+- Parte inferior
+de la pieza:
+$$100$$
+Unidad:
+$$\text{mm}$$
+$$= 10$$
+Unidad:
+$$\text{cm}$$
+
+Como las dos
+semicajas son
+de igual
+altura, ambas
+deben medir
+al menos
+$$10$$
+Unidad:
+$$\text{cm}$$
+para alojar la
+pieza.
+
+Añadiendo un
+espesor mínimo
+de arena de
+$$5$$
+Unidad:
+$$\text{cm}$$
+para seguridad
+e inclinación:
+$$H_{caja} = 10 + 5$$
+$$H_{caja} = 15$$
+Unidad:
+$$\text{cm}$$
+
+Altura mínima
+de cada
+semicaja:
+$$15$$
+Unidad:
+$$\text{cm}$$
+(Total caja
+$$30$$
+Unidad:
+$$\text{cm}$$
+).
+
+#### Apartado 2:
+Volumen de la
+pieza (Vp):
+
+1. Semicilindro
+superior:
+$$V_{sup} = \frac{1}{2}\pi R^2 \cdot L$$
+Con:
+$$R = 5$$
+Unidad:
+$$\text{cm}$$
+$$L = 12$$
+Unidad:
+$$\text{cm}$$
+$$V_{sup} = \frac{1}{2}\pi \cdot 25 \cdot 12$$
+$$V_{sup} \approx 471,24$$
+Unidad:
+$$\text{cm}^3$$
+
+2. Rectángulo
+inferior:
+$$V_{inf} = 10 \cdot 12 \cdot 10$$
+$$V_{inf} = 1200$$
+Unidad:
+$$\text{cm}^3$$
+
+3. Noyo (agujero
+cilíndrico):
+$$V_{noyo} = \pi \cdot r^2 \cdot L$$
+Con:
+$$r = 2,5$$
+Unidad:
+$$\text{cm}$$
+$$V_{noyo} = \pi \cdot 2,5^2 \cdot 12$$
+$$V_{noyo} \approx 235,62$$
+Unidad:
+$$\text{cm}^3$$
+
+Volumen exacto
+de la pieza:
+$$V_p = V_{sup} + V_{inf} - V_{noyo}$$
+$$V_p = 471,24 + 1200 - 235,62$$
+$$V_p \approx 1435,62$$
+Unidad:
+$$\text{cm}^3$$
+
+Nota:
+Si aproximamos
+la pieza a un
+cubo de:
+$$10 \times 12 \times 15$$
+Unidad:
+$$\text{cm}$$
+$$V_p \approx 1800 - 235,6$$
+$$V_p \approx 1564,4$$
+Unidad:
+$$\text{cm}^3$$
+
+Volumen mínimo
+de mazarota
+(Vm):
+- Con volumen
+exacto:
+$$V_m = 1435,62 \cdot 0,043$$
+$$V_m \approx 61,73$$
+Unidad:
+$$\text{cm}^3$$
+
+- Con volumen
+aproximado:
+$$V_m = 1564,4 \cdot 0,043$$
+$$V_m \approx 67,27$$
+Unidad:
+$$\text{cm}^3$$
+
+¿Cabe en la
+caja?
+Sí. Para un
+cilindro con
+$$H = 2R$$
+$$V_m = 2\pi R^3$$
+Con:
+$$V_m = 61,73$$
+Unidad:
+$$\text{cm}^3$$
+$$R \approx 2,14$$
+Unidad:
+$$\text{cm}$$
+$$H \approx 4,28$$
+Unidad:
+$$\text{cm}$$
+Cabe holgado en
+la arena de la
+caja.
+
+#### Apartado 3:
+Caudal de
+llenado (Q):
+$$Q = A_b \cdot v$$
+Donde:
+$$v = 114\text{ m/min}$$
+$$v = \frac{11400\text{ cm}}{60\text{ s}}$$
+$$v = 190$$
+Unidad:
+$$\text{cm/s}$$
+
+$$Q = 1 \cdot 190$$
+$$Q = 190$$
+Unidad:
+$$\text{cm}^3\text{/s}$$
+
+Tiempo de
+llenado (tl):
+- Caso exacto:
+$$t_l = \frac{1435,62}{190}$$
+$$t_l \approx 7,56$$
+Unidad:
+$$\text{s}$$
+
+- Caso aprox.:
+$$t_l = \frac{1564,4}{190}$$
+$$t_l \approx 8,23$$
+Unidad:
+$$\text{s}$$
+
+Tiempo de
+solidificac.
+(tm):
+$$t_m = 1,5 \cdot t_l$$
+
+- Caso exacto:
+$$t_m = 1,5 \cdot 7,56$$
+$$t_m = 11,34$$
+Unidad:
+$$\text{s}$$
+$$t_m \approx 0,189$$
+Unidad:
+$$\text{min}$$
+
+- Caso aprox.:
+$$t_m = 1,5 \cdot 8,23$$
+$$t_m = 12,35$$
+Unidad:
+$$\text{s}$$
+$$t_m \approx 0,206$$
+Unidad:
+$$\text{min}$$
