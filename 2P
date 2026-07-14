@@ -1,0 +1,1065 @@
+# Problemas
+# 2º Parcial
+
+## Índice
+* [Conceptos](#conceptos)
+* [Problema 1: Diseño de mazarota cilíndrica](#problema-1)
+* [Problema 2: Torneado cilíndrico de acero](#problema-2)
+* [Problema 3: Semicorona circular troquelada](#problema-3)
+* [Problema 4: Embutición de vaso de latón](#problema-4)
+
+---
+
+## Conceptos
+
+* 2º Parcial:
+  Recopilación
+  de problemas
+  del segundo
+  examen parcial
+  de Procesos
+  de
+  Fabricación.
+
+* Temas:
+  - Tema 5:
+    Moldeo.
+  - Tema 8:
+    Conformado
+    de chapa.
+  - Tema 9:
+    Mecanizado.
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcripción:
+En un proceso de
+moldeo en arena
+para piezas de
+acero, se
+necesita
+diseñar una
+mazarota
+cilíndrica que
+tarde en
+solidificar un
+15% más del
+tiempo de la
+pieza y que
+compense una
+contracción del
+volumen de un
+10%. Se sabe
+que el volumen
+de la pieza son
+250 cm3 y el
+área de
+evacuación de la
+pieza son 350
+cm2. Indique el
+diámetro y la
+altura de la
+mazarota
+definitiva
+usando los
+criterios
+habituales de
+diseño. Emplee
+un coeficiente
+n=2, y para
+facilitar el
+cálculo no
+desprecie
+ninguna
+superficie de la
+mazarota
+cilíndrica.
+
+### Datos:
+- Volumen (Vp):
+$$V_p = 250$$
+Unidad:
+$$\text{cm}^3$$
+- Área (Ap):
+$$A_p = 350$$
+Unidad:
+$$\text{cm}^2$$
+- Exponente:
+$$n = 2$$
+- Incremento t:
+$$t_m = 1,15 \cdot t_p$$
+- Contracción:
+$$\text{Contr.} = 10\%$$
+- Efic. mazarota:
+$$\text{Efic.} = 25\%$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado 1:
+Relación
+geométrica
+óptima.
+
+Para una
+mazarota
+cilíndrica de
+máxima
+eficiencia con
+todas sus caras
+activas:
+$$H = D$$
+
+##### Volumen (Vm):
+$$V_m = \frac{\pi \cdot D^2}{4} \cdot H$$
+$$V_m = \frac{\pi \cdot D^3}{4}$$
+
+##### Área (Am):
+$$A_m = \pi \cdot D \cdot H + 2 \cdot \frac{\pi \cdot D^2}{4}$$
+$$A_m = 1,5 \cdot \pi \cdot D^2$$
+
+##### Módulo (Mm):
+$$M_m = \frac{V_m}{A_m}$$
+$$M_m = \frac{D}{6}$$
+
+---
+
+#### Apartado 2:
+Térmico:
+
+##### Mod. pieza:
+$$M_p = \frac{V_p}{A_p}$$
+$$M_p = \frac{250}{350}$$
+$$M_p \approx 0,7143$$
+Unidad:
+$$\text{cm}$$
+
+##### Mod. mazarota:
+Por Chvorinov:
+$$t_m = 1,15 \cdot t_p$$
+$$M_m = \sqrt{1,15} \cdot M_p$$
+$$M_m \approx 1,0724 \cdot 0,7143$$
+$$M_m \approx 0,766$$
+Unidad:
+$$\text{cm}$$
+
+##### Diámetro:
+$$D_t = 6 \cdot M_m$$
+$$D_t = 6 \cdot 0,766$$
+$$D_t \approx 4,596$$
+Unidad:
+$$\text{cm}$$
+
+---
+
+#### Apartado 3:
+Criterio
+volumétrico.
+
+##### Contr.:
+Volumen a
+compensar:
+$$V_{\text{contr}} = 0,10 \cdot V_p$$
+$$V_{\text{contr}} = 0,10 \cdot 250$$
+$$V_{\text{contr}} = 25$$
+Unidad:
+$$\text{cm}^3$$
+
+##### Vol. maza:
+El rechupe
+ocupa como
+máximo el 25%:
+$$V_m \ge \frac{V_{\text{contr}}}{0,25}$$
+$$V_m \ge \frac{25}{0,25}$$
+$$V_m \ge 100$$
+Unidad:
+$$\text{cm}^3$$
+
+##### Diámetro:
+$$V_m = \frac{\pi \cdot D_v^3}{4} = 100$$
+$$D_v^3 = \frac{400}{\pi}$$
+$$D_v^3 \approx 127,32$$
+$$D_v = \sqrt[3]{127,32}$$
+$$D_v \approx 5,031$$
+Unidad:
+$$\text{cm}$$
+
+---
+
+#### Apartado 4:
+Dimensiones
+definitivas.
+
+Comparamos
+diámetros:
+$$D_t \approx 4,596\text{ cm}$$
+$$D_v \approx 5,031\text{ cm}$$
+
+El restrictivo
+es el valor
+volumétrico:
+$$D = 5,03$$
+Unidad:
+$$\text{cm}$$
+
+Por tanto:
+$$D = H = 5,03$$
+Unidad:
+$$\text{cm}$$
+(Equivale a:
+$$50,3$$
+Unidad:
+$$\text{mm}$$
+).
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcripción:
+Reciclando
+materiales del
+proceso de
+moldeo del
+Problema 1, se
+van a mecanizar
+en un torno de
+eje paralelo,
+las mazarotas
+sanas para
+obtener barras
+de acero, que
+tras un desbaste
+inicial tienen
+de 100 mm
+de longitud
+y 50 mm de
+diámetro.
+Sobre estos
+cilindros, se
+realiza una
+sola pasada, con
+refrigeración a
+presión y de
+manera eficaz,
+empleando un
+avance de 0,4
+mm/vuelta y una
+profundidad de
+pasada de 3 mm.
+Para eso se
+utiliza una
+herramienta
+monofilo de HSS
+que tiene una:
+$$V_0 = 22\text{ m/min}$$
+y:
+$$Q_0 = 6\text{ dm}^3$$
+con un ángulo
+de entrada de
+45° y una
+longitud de
+entrada igual a
+la de salida, e
+igual a 5 mm.
+La gama de
+velocidades del
+torno en r.p.m
+es la siguiente:
+50, 110, 150,
+185, 210, 260,
+300, 340, 450,
+575, 650, 800.
+Responda los
+siguientes
+apartados:
+
+a) Velocidad de
+corte adecuada
+para realizar el
+mecanizado,
+según la gama
+disponible.
+b) Número de
+piezas que se
+pueden
+mecanizar entre
+2 afilados de la
+herramienta.
+c) Tiempo de
+mecanizado
+entre 2
+afilados
+consecutivos.
+
+### Datos:
+- Diámetro (D):
+$$D = 50$$
+Unidad:
+$$\text{mm}$$
+- Longitud (l):
+$$l = 100$$
+Unidad:
+$$\text{mm}$$
+- Pasada (ap):
+$$a_p = 3$$
+Unidad:
+$$\text{mm}$$
+- Avance (f):
+$$f = 0,4$$
+Unidad:
+$$\text{mm/vuelta}$$
+- Ensayo V0:
+$$V_0 = 22$$
+Unidad:
+$$\text{m/min}$$
+- Vida Q0:
+$$Q_0 = 6$$
+Unidad:
+$$\text{dm}^3$$
+- Ángulo:
+$$\kappa_r = 45^{\circ}$$
+- Seguridad:
+$$l_e = l_s = 5$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado a:
+Velocidad de
+corte y giro.
+
+##### Presión (Vo):
+Con refrig. a
+presión:
+$$V_{\text{o,refrig}} = 1,5 \cdot V_0$$
+$$V_{\text{o,refrig}} = 1,5 \cdot 22$$
+$$V_{\text{o,refrig}} = 33$$
+Unidad:
+$$\text{m/min}$$
+
+##### Eficaz (Ve):
+Como es eficaz:
+$$V_{\text{ef}} = \frac{4}{3} \cdot V_{\text{o,refrig}}$$
+$$V_{\text{ef}} = \frac{4}{3} \cdot 33$$
+$$V_{\text{ef}} = 44$$
+Unidad:
+$$\text{m/min}$$
+
+##### Giro (N):
+$$N_{\text{teórico}} = \frac{V_{\text{ef}} \cdot 1000}{\pi \cdot D}$$
+$$N_{\text{teórico}} = \frac{44 \cdot 1000}{\pi \cdot 50}$$
+$$N_{\text{teórico}} \approx 280,11$$
+Unidad:
+$$\text{rpm}$$
+
+Gama de giros:
+$$260\text{ rpm}$$
+$$300\text{ rpm}$$
+
+Diferencia con
+la superior:
+$$300 - 280,11 = 19,89$$
+Como:
+$$19,89 > 10$$
+Se adopta la
+velocidad
+inferior:
+$$N = 260$$
+Unidad:
+$$\text{rpm}$$
+
+##### Corte real:
+$$V_{c,\text{real}} = \frac{\pi \cdot D \cdot N}{1000}$$
+$$V_{c,\text{real}} = \frac{\pi \cdot 50 \cdot 260}{1000}$$
+$$V_{c,\text{real}} \approx 40,84$$
+Unidad:
+$$\text{m/min}$$
+
+---
+
+#### Apartado b:
+Piezas entre
+dos afilados.
+
+##### Vida Q:
+Con refrig.
+a presión:
+$$Q_{\text{refrig}} = 1,5 \cdot Q_0$$
+$$Q_{\text{refrig}} = 1,5 \cdot 6$$
+$$Q_{\text{refrig}} = 9$$
+Unidad:
+$$\text{dm}^3$$
+
+Al trabajar
+eficaz, la
+capacidad se
+reduce a la
+mitad:
+$$Q_{\text{real}} = \frac{Q_{\text{refrig}}}{2}$$
+$$Q_{\text{real}} = 4,5$$
+Unidad:
+$$\text{dm}^3$$
+
+En mm3:
+$$Q_{\text{real}} = 4,5 \cdot 10^6$$
+Unidad:
+$$\text{mm}^3$$
+
+##### Diám. df:
+$$D_f = D - 2 \cdot a_p$$
+$$D_f = 50 - 2 \cdot 3$$
+$$D_f = 44$$
+Unidad:
+$$\text{mm}$$
+
+##### Pieza (V):
+Volumen de
+viruta por
+pieza:
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (D^2 - D_f^2) \cdot l$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot (50^2 - 44^2) \cdot 100$$
+$$V_{\text{viruta}} = \frac{\pi}{4} \cdot 564 \cdot 100$$
+$$V_{\text{viruta}} \approx 44304,08$$
+Unidad:
+$$\text{mm}^3$$
+
+##### Piezas:
+$$\text{Nº piezas} = \frac{Q_{\text{real}}}{V_{\text{viruta}}}$$
+$$\text{Nº piezas} = \frac{4,5 \cdot 10^6}{44304,08}$$
+$$\text{Nº piezas} \approx 101,57$$
+
+Solución:
+Se pueden
+mecanizar:
+$$101$$
+piezas.
+
+---
+
+#### Apartado c:
+Tiempo de
+mecanizado
+acumulado.
+
+##### Avance (Vf):
+Velocidad de
+avance:
+$$V_f = f \cdot N$$
+$$V_f = 0,4 \cdot 260$$
+$$V_f = 104$$
+Unidad:
+$$\text{mm/min}$$
+
+##### Pieza (tm):
+Tiempo por
+pieza:
+$$t_m = \frac{l_e + l + a_p \cdot \cot(\kappa_r) + l_s}{V_f}$$
+$$t_m = \frac{5 + 100 + 3 \cdot \cot(45^{\circ}) + 5}{104}$$
+$$t_m = \frac{113}{104}$$
+$$t_m \approx 1,0865$$
+Unidad:
+$$\text{min}$$
+
+##### Acumulado:
+Tiempo total:
+$$T_{\text{mecanizado}} = t_m \cdot \text{Nº piezas}$$
+$$T_{\text{mecanizado}} = 1,0865 \cdot 101$$
+$$T_{\text{mecanizado}} \approx 109,74$$
+Unidad:
+$$\text{min}$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcripción:
+Se desea
+fabricar una
+serie de
+piezas como las
+de la figura
+partiendo de
+chapas de acero
+de:
+$$2000 \times 1000 \times 3\text{ mm}$$
+y:
+$$\sigma_c = 28\text{ kp/mm}^2$$
+El material no
+se considera ni
+dúctil, ni
+frágil. Se
+quiere hacer el
+proceso en una
+sola etapa por
+pieza.
+
+Se pide:
+a) Calcular la
+potencia que
+debe tener la
+máquina, si el
+tiempo de ciclo
+empleado es de
+4 segundos y el
+rendimiento de
+esta es del
+80%. Aplique un
+coeficiente de
+seguridad de
+1,2.
+b) Diseñar la
+mejor
+disposición a
+efectos de
+rendimiento de
+la chapa,
+sabiendo que la
+pieza puede
+colocarse
+únicamente en
+posición
+horizontal o
+vertical y que
+el material
+permite las
+distancias a
+cualquier borde
+(piezas o borde
+de chapa) sean
+de 3 mm.
+Calcule el
+número de
+piezas que se
+podrán obtener
+de un paquete
+de 100 chapas,
+procurando un
+rendimiento
+máximo del
+proceso.
+c) Representar
+el conjunto
+punzón-matriz y
+sus dimensiones
+si el juego es
+de 0,16 mm.
+
+### Datos:
+- Espesor (s):
+$$s = 3$$
+Unidad:
+$$\text{mm}$$
+- Resistencia:
+$$\sigma_c = 28$$
+Unidad:
+$$\text{kp/mm}^2$$
+- Seguridad:
+$$K = 1,2$$
+- Rendimiento:
+$$\eta = 0,8$$
+- Ciclo (tc):
+$$t_{\text{ciclo}} = 4$$
+Unidad:
+$$\text{s}$$
+- Rad. ext:
+$$R_{\text{ext}} = 75$$
+Unidad:
+$$\text{mm}$$
+- Rad. int:
+$$R_{\text{int}} = 60$$
+Unidad:
+$$\text{mm}$$
+- Diám. taladro:
+$$d = 10$$
+Unidad:
+$$\text{mm}$$
+- Holgura (e):
+$$e = 3$$
+Unidad:
+$$\text{mm}$$
+- Dimensiones:
+$$2000 \times 1000$$
+Unidad:
+$$\text{mm}$$
+- Juego (j):
+$$j = 0,16$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+### Solución
+Paso a Paso
+
+> [!NOTE]
+> En el plano
+> hay una
+> contradicción:
+> R_ext = 75 mm,
+> R_int = 60 mm.
+> La diferencia
+> es de 15 mm.
+> Sin embargo,
+> plano acota la
+> base de apoyo
+> como 30 mm.
+> Para concordar
+> con la clase,
+> se resolverá
+> usando R_int
+> de 60 mm para
+> la corona,
+> manteniendo
+> el valor de
+> 30 mm para la
+> base de apoyo.
+
+#### Apartado a:
+Potencia de la
+máquina.
+
+##### Perímetro:
+- Exterior:
+$$P_{\text{ext}} = \pi \cdot R_{\text{ext}}$$
+$$P_{\text{ext}} = \pi \cdot 75$$
+$$P_{\text{ext}} \approx 235,62$$
+Unidad:
+$$\text{mm}$$
+
+- Interior:
+$$P_{\text{int}} = \pi \cdot R_{\text{int}}$$
+$$P_{\text{int}} = \pi \cdot 60$$
+$$P_{\text{int}} \approx 188,50$$
+Unidad:
+$$\text{mm}$$
+
+- Bases planas:
+$$P_{\text{bases}} = 2 \cdot 30$$
+$$P_{\text{bases}} = 60$$
+Unidad:
+$$\text{mm}$$
+
+- Agujeros (3x):
+$$P_{\text{taladros}} = 3 \cdot (\pi \cdot d)$$
+$$P_{\text{taladros}} = 3 \cdot \pi \cdot 10$$
+$$P_{\text{taladros}} \approx 94,25$$
+Unidad:
+$$\text{mm}$$
+
+- Total (P):
+$$P = 235,62 + 188,50 + 60 + 94,25$$
+$$P = 578,37$$
+Unidad:
+$$\text{mm}$$
+
+##### Fuerza:
+$$F = P \cdot s \cdot \sigma_c \cdot K$$
+$$F = 578,37 \cdot 3 \cdot 28 \cdot 1,2$$
+$$F \approx 58300$$
+Unidad:
+$$\text{kp}$$
+
+En Newtons:
+$$F = 58300 \cdot 10$$
+$$F = 583000$$
+Unidad:
+$$\text{N}$$
+
+##### Velocidad (v):
+Penetración (c):
+$$c = 0,5 \cdot s$$
+$$c = 1,5$$
+Unidad:
+$$\text{mm}$$
+
+Tiempo (t):
+$$t = \frac{t_{\text{ciclo}}}{2}$$
+$$t = \frac{4}{2}$$
+$$t = 2$$
+Unidad:
+$$\text{s}$$
+
+Velocidad (v):
+$$v = \frac{c}{t}$$
+$$v = \frac{1,5 \cdot 10^{-3}}{2}$$
+$$v = 0,75 \cdot 10^{-3}$$
+Unidad:
+$$\text{m/s}$$
+
+##### Trabajo:
+$$W = F \cdot v$$
+$$W = 583000 \cdot 0,75 \cdot 10^{-3}$$
+$$W = 437,25$$
+Unidad:
+$$\text{W}$$
+
+##### Motor (P):
+$$P_{\text{motor}} = \frac{W}{\eta}$$
+$$P_{\text{motor}} = \frac{437,25}{0,8}$$
+$$P_{\text{motor}} = 546,56$$
+Unidad:
+$$\text{W}$$
+
+---
+
+#### Apartado b:
+Disposición y
+producción.
+
+Caja de la
+pieza:
+$$150 \times 75$$
+Unidad:
+$$\text{mm}$$
+
+##### Opción 1:
+Horizontal.
+
+Paso (Ph):
+$$P_h = 150 + 3$$
+$$P_h = 153$$
+Unidad:
+$$\text{mm}$$
+
+Ancho fila:
+$$B_h = 75 + 3$$
+$$B_h = 78$$
+Unidad:
+$$\text{mm}$$
+
+Filas:
+$$N_{\text{filas}} = \lfloor \frac{1000 - 3}{78} \rfloor$$
+$$N_{\text{filas}} = 12$$
+
+Piezas/fila:
+$$N_{\text{piezas}} = \lfloor \frac{2000 - 3}{153} \rfloor$$
+$$N_{\text{piezas}} = 13$$
+
+Total chapa:
+$$12 \cdot 13 = 156$$
+piezas.
+
+##### Opción 2:
+Vertical.
+
+Paso (Pv):
+$$P_v = 75 + 3$$
+$$P_v = 78$$
+Unidad:
+$$\text{mm}$$
+
+Ancho fila:
+$$B_v = 150 + 3$$
+$$B_v = 153$$
+Unidad:
+$$\text{mm}$$
+
+Filas:
+$$N_{\text{filas}} = \lfloor \frac{2000 - 3}{153} \rfloor$$
+$$N_{\text{filas}} = 13$$
+
+Piezas/fila:
+$$N_{\text{piezas}} = \lfloor \frac{1000 - 3}{78} \rfloor$$
+$$N_{\text{piezas}} = 12$$
+
+Total chapa:
+$$13 \cdot 12 = 156$$
+piezas.
+
+##### Paquete:
+Para 100
+chapas:
+$$\text{Total} = 156 \cdot 100$$
+$$\text{Total} = 15600$$
+piezas.
+
+---
+
+#### Apartado c:
+Punzón-matriz y
+dimensiones.
+
+Juego diametral:
+$$2j = 0,32$$
+Unidad:
+$$\text{mm}$$
+
+##### Troquel.:
+(Contorno ext).
+
+La matriz
+mantiene la
+medida
+nominal:
+- R ext matriz:
+$$75$$
+Unidad:
+$$\text{mm}$$
+- R int matriz:
+$$60$$
+Unidad:
+$$\text{mm}$$
+- Base matriz:
+$$30$$
+Unidad:
+$$\text{mm}$$
+
+El punzón se
+reduce en el
+juego j:
+- R ext punzón:
+$$75 - 0,16$$
+$$R_{\text{ext,p}} = 74,84$$
+Unidad:
+$$\text{mm}$$
+- R int punzón:
+$$60 + 0,16$$
+$$R_{\text{int,p}} = 60,16$$
+Unidad:
+$$\text{mm}$$
+- Base punzón:
+$$150 - 0,32$$
+$$\text{Base} = 149,68$$
+Unidad:
+$$\text{mm}$$
+
+##### Punzonado:
+(3 taladros).
+
+El punzón
+mantiene la
+medida
+nominal:
+- D punzón (3x):
+$$10$$
+Unidad:
+$$\text{mm}$$
+
+La matriz
+se aumenta en
+2j:
+- D matriz (3x):
+$$10 + 0,32$$
+$$D_{\text{mat}} = 10,32$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcripción:
+Se quiere
+conformar un
+volumen
+cilíndrico (tipo
+vaso), de latón
+ASTM 70/30,
+mediante un
+proceso de corte
+y embutición de
+chapa de 5 mm de
+espesor. El vaso
+cilíndrico final
+debe alcanzar
+una altura de
+100 mm y tener
+un diámetro de
+40 mm. Responda
+los siguientes
+apartados:
+
+a) Calcule el
+diámetro inicial
+del disco
+necesario de
+latón ASTM
+70/30.
+b) Calcule
+cuántas
+embuticiones son
+necesarias para
+obtener el
+recipiente
+deseado.
+Considere que el
+latón tiene:
+$$K_1 = 0,52$$
+y:
+$$K_2 = K_n = 0,60$$
+c) Compare las
+embuticiones 1ª
+y 3ª e indique
+en cuál es mayor
+la fuerza
+necesaria para
+llevarla a cabo
+y razone
+numéricamente su
+respuesta.
+
+### Datos:
+- Espesor (s):
+$$s = 5$$
+Unidad:
+$$\text{mm}$$
+- Altura (hf):
+$$h_f = 100$$
+Unidad:
+$$\text{mm}$$
+- Diám. vaso:
+$$d_f = 40$$
+Unidad:
+$$\text{mm}$$
+- Coeficiente 1:
+$$K_1 = 0,52$$
+- Coeficiente 2:
+$$K_2 = 0,60$$
+
+---
+
+### Solución
+Paso a Paso
+
+#### Apartado a:
+Diámetro del
+disco inicial.
+
+##### Área (A):
+$$A_{\text{disco}} = A_{\text{vaso}}$$
+$$\frac{\pi \cdot D_0^2}{4} = \frac{\pi \cdot d_f^2}{4} + \pi \cdot d_f \cdot h_f$$
+$$D_0^2 = d_f^2 + 4 \cdot d_f \cdot h_f$$
+$$D_0^2 = 40^2 + 4 \cdot 40 \cdot 100$$
+$$D_0^2 = 1600 + 16000$$
+$$D_0^2 = 17600$$
+$$D_0 = \sqrt{17600}$$
+$$D_0 \approx 132,66$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+#### Apartado b:
+Número de
+embuticiones.
+
+##### Diámetro D1:
+$$D_1 = K_1 \cdot D_0$$
+$$D_1 = 0,52 \cdot 132,66$$
+$$D_1 \approx 68,98$$
+Unidad:
+$$\text{mm}$$
+Como:
+$$68,98 > 40$$
+Se requiere
+más de 1
+embutición.
+
+##### Diám. D2:
+$$D_2 = K_2 \cdot D_1$$
+$$D_2 = 0,60 \cdot 68,98$$
+$$D_2 \approx 41,39$$
+Unidad:
+$$\text{mm}$$
+Como:
+$$41,39 > 40$$
+Se requiere
+más de 2
+embuticiones.
+
+##### Diámetro D3:
+$$D_3 = K_3 \cdot D_2$$
+$$D_3 = 0,60 \cdot 41,39$$
+$$D_3 \approx 24,83$$
+Unidad:
+$$\text{mm}$$
+Como:
+$$24,83 \le 40$$
+Se llega al
+diámetro final
+en 3 etapas.
+
+##### Coef real:
+Para etapa 3:
+$$K_{3,\text{real}} = \frac{d_f}{D_2}$$
+$$K_{3,\text{real}} = \frac{40}{41,39}$$
+$$K_{3,\text{real}} \approx 0,966$$
+
+Como:
+$$0,966 > 0,60$$
+Es seguro.
+
+Solución:
+Se necesitan:
+$$3$$
+embuticiones.
+
+---
+
+#### Apartado c:
+Comparación de
+fuerzas (1ª y
+3ª).
+
+##### Relación (F):
+$$F_n = \pi \cdot D_n \cdot s \cdot \sigma_c \cdot m_n$$
+Donde:
+- D_n: diámetro
+  de la etapa.
+- m_n: coef.
+  de la etapa.
+
+Dado que s y
+tensión son
+iguales:
+$$F_n \propto D_n \cdot m_n$$
+
+##### Etapa 1:
+$$D_1 = 68,98$$
+Unidad:
+$$\text{mm}$$
+$$m_1 = 0,52$$
+Factor:
+$$f_1 = 68,98 \cdot 0,52$$
+$$f_1 \approx 35,87$$
+
+##### Etapa 3:
+$$D_3 = 40$$
+Unidad:
+$$\text{mm}$$
+$$m_3 \approx 0,966$$
+Factor:
+$$f_3 = 40 \cdot 0,966$$
+$$f_3 \approx 38,64$$
+
+##### Comparación:
+Como:
+$$38,64 > 35,87$$
+La fuerza es
+mayor en la
+3ª embutición.
+
+Esto se debe
+a que el
+coeficiente
+real en la
+etapa 3 es
+muy alto:
+$$0,966$$
+lo que supera
+el efecto de
+la reducción
+del diámetro.
