@@ -1,0 +1,196 @@
+# Tema 2
+# Metrología y
+# Calidad
+
+## Índice
+* [Normalización](#normalización)
+* [Metrología](#metrología)
+* [Patrones](#patrones)
+* [Trazabilidad](#trazabilidad)
+* [Organismos](#organismos)
+* [Calidad](#calidad)
+
+---
+
+## Normalización
+
+### Definición:
+Redacción y
+aprobación de
+normas para
+garantizar el
+acoplamiento y
+repuesto de
+elementos.
+
+### Objetivos:
+
+- Simplificar:
+  Reducir los
+  modelos
+  necesarios.
+- Unificar:
+  Permitir el
+  intercambio
+  internacional.
+- Especificar:
+  Crear un
+  lenguaje
+  preciso.
+
+---
+
+## Metrología
+
+Conocimiento
+relativo a las
+medidas y sus
+instrumentos.
+
+### Campos:
+
+#### Científica:
+Desarrollo y
+mantenimiento
+de patrones
+de medida.
+Nivel más alto:
+Metrología
+Fundamental.
+
+Campos del
+BIPM:
+- Acústica.
+- Sustancia.
+- Electricidad.
+- Magnetismo.
+- Fotometría.
+- Radiometría.
+- Longitud.
+- Masa.
+- Radiaciones.
+- Temperatura.
+- Tiempo.
+
+Campos de
+EURAMET:
+- Flujo.
+- Calidad.
+- Metrología
+  interdiscip.
+
+#### Industrial:
+Funcionamiento
+de equipos
+usados en la
+producción.
+
+Su aplicación
+es voluntaria.
+
+#### Legal:
+Medidas en las
+transacciones
+comerciales,
+salud y
+seguridad.
+
+---
+
+## Patrones
+
+Medida física
+materializada
+concebida para
+definir o
+conservar una
+unidad.
+
+### Ejemplo:
+El metro
+patrón.
+
+Se define por
+el trayecto de
+la luz en el
+vacío durante:
+$$1/299792458$$
+Unidad:
+$$\text{s}$$
+
+---
+
+## Trazabilidad
+
+Propiedad de
+una medida de
+relacionarse
+con patrones
+mediante una
+cadena
+continua de
+comparación.
+
+Cadena de
+trazabilidad:
+- BIPM.
+- PTB (INM).
+- CEM.
+- Laboratorios.
+- Calibración.
+- Medición.
+
+---
+
+## Organismos
+
+### Internacional:
+- OIML:
+  Metrología
+  legal.
+- BIPM:
+  Pesas y
+  medidas.
+- ISO:
+  Estándares.
+
+### Nacional
+### (España):
+
+- UNE:
+  Crea y
+  publica las
+  normas.
+- AENOR:
+  Certificación
+  de normas.
+- ENAC:
+  Acreditación
+  de labs.
+- CEM:
+  Máxima
+  autoridad.
+  Custodia de
+  patrones.
+  Soporte de
+  trazabilidad.
+
+---
+
+## Calidad
+
+Definiciones
+clave:
+
+- Normalización:
+  Establece
+  las reglas.
+- Certificación:
+  Demuestra
+  que se
+  cumplen.
+- Acreditación:
+  Garantiza
+  que quien
+  evalúa es
+  competente.
