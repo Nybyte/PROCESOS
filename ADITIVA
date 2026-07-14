@@ -1,0 +1,151 @@
+# Tema 7
+# Fabricación
+# Aditiva en
+# Ingeniería
+
+## Índice
+* [Definición](#definición)
+* [Historia](#historia)
+* [Etapas](#etapas)
+* [Tecnologías](#tecnologías)
+* [Materiales](#materiales)
+* [Estructura](#estructura)
+
+---
+
+## Definición
+
+Creación de un
+objeto físico
+de forma
+incremental,
+añadiendo
+capa a capa.
+
+Diferente al
+mecanizado
+sustractivo.
+
+Norma común:
+ISO/ASTM 52900
+
+---
+
+## Historia
+
+- 1981:
+  Kodama propone
+  curado con UV.
+- 1984:
+  Hull patenta
+  estereolitog.
+  (SLA).
+- 1988:
+  Crump inventa
+  deposición
+  fundida (FDM).
+- 1995:
+  Deckard inventa
+  láser (SLS).
+
+---
+
+## Etapas
+
+Proceso:
+
+1. Diseño CAD.
+2. Formato STL.
+3. Slicing
+   (capas).
+4. G-code.
+5. Impresión.
+6. Post-proceso:
+   Lijado y
+   soportes.
+
+---
+
+## Tecnologías
+
+Clasificación:
+
+### Lecho polvo:
+- SLS:
+  Sinteriza con
+  láser.
+- SLM:
+  Fusión total
+  con láser.
+- EBM:
+  Haz de
+  electrones.
+
+### Extrusión:
+- FDM:
+  Filamento
+  fundido.
+- DIW:
+  Jeringa con
+  viscosos.
+
+### Fotopolim.:
+- SLA:
+  Láser UV y
+  resina.
+- DLP:
+  Pantalla cura
+  capa completa.
+
+### Energía:
+- LMD:
+  Láser y polvo
+  coaxial.
+- DEB:
+  Usa plasma.
+
+---
+
+## Materiales
+
+### Metales:
+Acero,
+Titanio,
+Níquel,
+Aluminio.
+
+### Polímeros:
+ABS,
+PLA,
+Nylon,
+PC.
+
+### Cerámicos:
+Alúmina,
+Circonio,
+Vidrio.
+
+---
+
+## Estructura
+
+### SLM/EBM:
+Grano fino.
+Alta dureza.
+Baja porosidad.
+
+### SLS:
+Mayor
+porosidad.
+
+### FDM:
+Anisotrópico
+por capas y
+orientación
+de fibra.
+
+### SLA/DLP:
+Estructura
+molecular
+densa y
+lisa.
