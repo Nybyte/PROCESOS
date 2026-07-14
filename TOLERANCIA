@@ -1,0 +1,1476 @@
+# Boletín Tema 3: Tolerancias y Ajustes
+
+## Índice
+* [Ejercicio 4: Ajuste 25H7/m6](#ejercicio-4)
+* [Ejercicio 5: Sistema Agujero Único y Calidades](#ejercicio-5)
+* [Ejercicio 6: Sistema Agujero Base y Tolerancias](#ejercicio-6)
+* [Ejercicio 16: Tolerancias ISO por Calidades](#ejercicio-16)
+* [Ejercicio 17: Amplitud de Tolerancia de Ajuste](#ejercicio-17)
+* [Ejercicio 18: Ajustes Eje-Chaveta y Eje-Alojamiento](#ejercicio-18)
+* [Ejercicio 19: Diseño de Tolerancias para Rodamiento](#ejercicio-19)
+* [Ejercicio 20: Interpretación de Tolerancias Geométricas](#ejercicio-20)
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+4. Sabiendo que en
+el ajuste 25H7/m6
+el diámetro máximo
+del eje coincide
+con el diámetro
+máximo del
+agujero, calcular:
+a. Tolerancias del
+eje, agujero y del
+ajuste
+b. Diferencias de
+referencia de
+ambas piezas
+c. Juego o aprieto
+máximo, mínimo y
+medio
+d. Tipo de ajuste
+y su
+representación
+gráfica
+Nota: Grupo de
+cota: 18 < d <= 30;
+f(6) = 10
+
+### Solución Paso a Paso
+
+#### A:
+Grupo de cotas:
+$$18 < d \le 30$$
+Unidad:
+$$\text{mm}$$
+Medida nominal:
+$$d_N = 25$$
+Unidad:
+$$\text{mm}$$
+Media
+geométrica (N):
+$$N = \sqrt{18 \cdot 30}$$
+$$N \approx 23,24$$
+Unidad:
+$$\text{mm}$$
+
+Unidad de
+tolerancia (i):
+$$i = 0,45 \cdot \sqrt[3]{N} + 0,001 \cdot N$$
+$$i = 0,45 \cdot \sqrt[3]{23,24} + 0,001 \cdot 23,24$$
+$$i \approx 1,307$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia del
+eje (Te) para
+calidad 6:
+$$T_e = 10 \cdot i$$
+$$T_e = 10 \cdot 1,307$$
+$$T_e \approx 13,07$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia del
+agujero (Ta)
+para calidad 7:
+$$T_a = 16 \cdot i$$
+$$T_a = 16 \cdot 1,307$$
+$$T_a \approx 20,91$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia del
+ajuste (Taj):
+$$T_{aj} = T_a + T_e$$
+$$T_{aj} = 20,91 + 13,07$$
+$$T_{aj} \approx 33,98$$
+Unidad:
+$$\mu\text{m}$$
+
+#### B:
+Diferencia de
+referencias:
+Sistema agujero
+único (H7):
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = T_a$$
+$$D_s \approx 20,91$$
+Unidad:
+$$\mu\text{m}$$
+
+El enunciado
+indica que:
+$$d_{max} = D_{max}$$
+$$d_N + d_s = D_N + D_s$$
+Dado que
+$$d_N = D_N = 25$$
+Tenemos:
+$$d_s = D_s$$
+$$d_s \approx 20,91$$
+Unidad:
+$$\mu\text{m}$$
+
+Como:
+$$T_e = d_s - d_i$$
+Despejamos
+$$d_i$$
+$$d_i = d_s - T_e$$
+$$d_i = 20,91 - 13,07$$
+$$d_i \approx 7,84$$
+Unidad:
+$$\mu\text{m}$$
+
+Referencias:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i \approx 7,84$$
+Unidad:
+$$\mu\text{m}$$
+
+#### C:
+Juegos o
+aprietes:
+- Juego máximo:
+$$J_{max} = D_s - d_i$$
+$$J_{max} = 20,91 - 7,84$$
+$$J_{max} \approx 13,07$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{max} = -A_{min}$$
+
+- Juego mínimo:
+$$J_{min} = D_i - d_s$$
+$$J_{min} = 0 - 20,91$$
+$$J_{min} \approx -20,91$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{min} = -A_{max}$$
+
+- Apriete máx:
+$$A_{max} \approx 20,91$$
+Unidad:
+$$\mu\text{m}$$
+
+- Apriete mín:
+$$A_{min} \approx -13,07$$
+Unidad:
+$$\mu\text{m}$$
+
+- Juego medio:
+$$J_{med} = \frac{J_{max} + J_{min}}{2}$$
+$$J_{med} = \frac{13,07 - 20,91}{2}$$
+$$J_{med} \approx -3,92$$
+Unidad:
+$$\mu\text{m}$$
+(Equivale a un
+apriete medio
+de
+$$3,92$$
+Unidad:
+$$\mu\text{m}$$
+).
+
+#### D:
+Tipo de ajuste:
+Al presentar
+tanto juego
+(positivo)
+como apriete
+(juego negativo
+o interferencia)
+se trata de un
+ajuste de
+transición o
+indeterminado.
+
+---
+
+## Ejercicio 5
+
+### Enunciado
+Transcription:
+5. Se quiere
+realizar el
+ajuste de un eje
+en un agujero
+utilizando el
+sistema "agujero
+único" y de
+forma que
+resulte
+comprendido
+entre un juego
+máximo de 21 um
+y un apriete
+máximo de 8 um.
+Si la cota
+nominal es de 18
+mm y se desea que
+las calidades
+difieran en una
+unidad,
+calcular:
+a. Tolerancias
+del eje, agujero
+y ajuste
+b. Diámetro
+máximo y mínimo
+del agujero
+c. Diferencias de
+referencia de
+ambas piezas
+d. Representar
+el ajuste
+e. Dibuja los
+calibres
+utilizados para
+controlar ambas
+piezas indicando
+las cotas
+correspondientes
+al lado de
+"rechazo"
+Nota: Grupo de
+cotas: 10 < d <= 18
+
+### Solución Paso a Paso
+
+#### A:
+Cálculo de N:
+Grupo:
+$$10 < d \le 18$$
+Unidad:
+$$\text{mm}$$
+$$N = \sqrt{10 \cdot 18}$$
+$$N \approx 13,42$$
+Unidad:
+$$\text{mm}$$
+
+Cálculo de i:
+$$i = 0,45 \cdot \sqrt[3]{N} + 0,001 \cdot N$$
+$$i = 0,45 \cdot \sqrt[3]{13,42} + 0,001 \cdot 13,42$$
+$$i \approx 1,08$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia total
+del ajuste:
+$$T_{aj} = J_{max} + A_{max}$$
+$$T_{aj} = 21 + 8$$
+$$T_{aj} = 29$$
+Unidad:
+$$\mu\text{m}$$
+
+Como las
+calidades
+difieren en
+una unidad:
+$$T_a = 1,6 \cdot T_e$$
+Por tanto:
+$$T_{aj} = T_a + T_e$$
+$$T_{aj} = 2,6 \cdot T_e$$
+$$29 = 2,6 \cdot T_e$$
+$$T_e \approx 11,15$$
+Unidad:
+$$\mu\text{m}$$
+
+Buscamos la
+calidad (IT):
+$$IT = \frac{T_e}{i}$$
+$$IT = \frac{11,15}{1,08}$$
+$$IT \approx 10,32$$
+Esto
+corresponde a
+la calidad 6
+(factor
+$$10 \cdot i$$
+).
+
+Por tanto:
+Eje en IT6:
+$$T_e = 10 \cdot i$$
+$$T_e = 10 \cdot 1,08$$
+$$T_e \approx 10,80$$
+Unidad:
+$$\mu\text{m}$$
+
+Agujero en IT7:
+$$T_a = 16 \cdot i$$
+$$T_a = 16 \cdot 1,08$$
+$$T_a \approx 17,28$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia real
+del ajuste:
+$$T_{aj} = 17,28 + 10,80$$
+$$T_{aj} \approx 28,08$$
+Unidad:
+$$\mu\text{m}$$
+
+#### B:
+Cotas del
+agujero:
+Sistema agujero
+único (H7):
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = T_a$$
+$$D_s \approx 17,28$$
+Unidad:
+$$\mu\text{m}$$
+
+Diámetros:
+- Mínimo:
+$$D_{min} = 18$$
+Unidad:
+$$\text{mm}$$
+- Máximo:
+$$D_{max} = 18 + 0,01728$$
+$$D_{max} \approx 18,01728$$
+Unidad:
+$$\text{mm}$$
+
+#### C:
+Diferencias de
+referencia:
+Hole (H7):
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s \approx 17,28$$
+Unidad:
+$$\mu\text{m}$$
+
+Para el eje:
+Con el apriete
+máximo:
+$$A_{max} = d_s - D_i = 8$$
+Dado que
+$$D_i = 0$$
+$$d_s \approx 8$$
+Unidad:
+$$\mu\text{m}$$
+
+Entonces:
+$$d_i = d_s - T_e$$
+$$d_i = 8 - 10,80$$
+$$d_i \approx -2,80$$
+Unidad:
+$$\mu\text{m}$$
+
+Si usamos el
+juego máximo:
+$$J_{max} = D_s - d_i = 21$$
+$$d_i = D_s - 21$$
+$$d_i = 17,28 - 21$$
+$$d_i \approx -3,72$$
+Unidad:
+$$\mu\text{m}$$
+
+La diferencia
+entre ambos
+valores de
+$$d_i$$
+es de
+$$0,92$$
+Unidad:
+$$\mu\text{m}$$
+debido a
+redondeos de IT.
+
+Referencias:
+- Agujero:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+- Eje:
+$$d_i \approx -2,80$$
+Unidad:
+$$\mu\text{m}$$
+(o
+$$-3,72$$
+Unidad:
+$$\mu\text{m}$$
+).
+
+#### D:
+Representación:
+El ajuste es
+$$18H7/j6$$
+o
+$$18H7/js6$$
+(aproximado).
+
+#### E:
+Calibres:
+
+Para el eje
+(herradura):
+- Lado Pasa:
+Cota máxima
+del eje.
+$$d_{max} = 18 + 0,008$$
+$$d_{max} \approx 18,008$$
+Unidad:
+$$\text{mm}$$
+- Lado No Pasa
+(Rechazo):
+Cota mínima.
+$$d_{min} = 18 - 0,0028$$
+$$d_{min} \approx 17,9972$$
+Unidad:
+$$\text{mm}$$
+(o
+$$17,99628$$
+Unidad:
+$$\text{mm}$$
+).
+
+Para el agujero
+(tampón):
+- Lado Pasa:
+Cota mínima.
+$$D_{min} = 18$$
+Unidad:
+$$\text{mm}$$
+- Lado No Pasa
+(Rechazo):
+Cota máxima.
+$$D_{max} = 18 + 0,01728$$
+$$D_{max} \approx 18,01728$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Ejercicio 6
+
+### Enunciado
+Transcription:
+6. Se quiere
+realizar un
+ajuste de un eje
+en un agujero
+utilizando el
+sistema "agujero
+base" y de
+forma que
+resulte un juego
+comprendido
+entre 0 y 49 um.
+Si el diámetro
+del agujero es de
+64 mm y se desea
+mecanizar en
+calidad IT-7,
+determine:
+a. Tolerancias
+del eje, agujero
+y ajuste
+b. Diámetro
+máximo y mínimo
+de eje y del
+agujero
+c. Diferencias de
+referencia de
+ambas piezas
+d. Representación
+gráfica del
+ajuste
+e. Mediante un
+dibujo, los
+calibres
+utilizados para
+controlar ambas
+piezas indicando
+las cotas
+correspondientes
+al lado de
+"rechazo"
+Nota: f(6) = 10;
+Grupo de cotas
+(50 < D <= 80)
+
+### Solución Paso a Paso
+
+#### A:
+Cálculo de N:
+Grupo:
+$$50 < D \le 80$$
+Unidad:
+$$\text{mm}$$
+$$N = \sqrt{50 \cdot 80}$$
+$$N \approx 63,25$$
+Unidad:
+$$\text{mm}$$
+
+Cálculo de i:
+$$i = 0,45 \cdot \sqrt[3]{N} + 0,001 \cdot N$$
+$$i = 0,45 \cdot \sqrt[3]{63,25} + 0,001 \cdot 63,25$$
+$$i \approx 1,856$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia para
+IT7 (agujero y
+eje):
+$$T_a = 16 \cdot i$$
+$$T_a = 16 \cdot 1,856$$
+$$T_a \approx 29,70$$
+Unidad:
+$$\mu\text{m}$$
+$$T_e = 29,70$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia del
+ajuste:
+$$T_{aj} = T_a + T_e$$
+$$T_{aj} = 29,70 + 29,70$$
+$$T_{aj} = 59,40$$
+Unidad:
+$$\mu\text{m}$$
+
+#### B:
+Cotas del
+agujero:
+Sistema agujero
+base (H7):
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = T_a$$
+$$D_s \approx 29,70$$
+Unidad:
+$$\mu\text{m}$$
+
+Diámetros:
+- Agujero Mín:
+$$D_{min} = 64$$
+Unidad:
+$$\text{mm}$$
+- Agujero Máx:
+$$D_{max} = 64 + 0,02970$$
+$$D_{max} \approx 64,02970$$
+Unidad:
+$$\text{mm}$$
+
+- Eje Mín:
+$$d_{min} = 64 - 0,01930$$
+$$d_{min} \approx 63,98070$$
+Unidad:
+$$\text{mm}$$
+- Eje Máx:
+$$d_{max} = 64 + 0,01040$$
+$$d_{max} \approx 64,01040$$
+Unidad:
+$$\text{mm}$$
+
+#### C:
+Diferencias de
+referencia:
+Juego máximo
+deseado es
+$$49$$
+Unidad:
+$$\mu\text{m}$$
+
+Fórmula:
+$$J_{max} = D_s - d_i$$
+Despejamos
+$$d_i$$
+$$d_i = D_s - J_{max}$$
+$$d_i = 29,70 - 49$$
+$$d_i \approx -19,30$$
+Unidad:
+$$\mu\text{m}$$
+
+Entonces:
+$$T_e = d_s - d_i$$
+$$d_s = T_e + d_i$$
+$$d_s = 29,70 - 19,30$$
+$$d_s \approx 10,40$$
+Unidad:
+$$\mu\text{m}$$
+
+Esto da un
+juego mínimo
+de:
+$$J_{min} = D_i - d_s$$
+$$J_{min} = 0 - 10,40$$
+$$J_{min} \approx -10,40$$
+Unidad:
+$$\mu\text{m}$$
+(Un apriete
+máximo de
+$$10,40$$
+Unidad:
+$$\mu\text{m}$$
+).
+
+Nota:
+El rango real
+de juegos es
+de
+$$-10,40$$
+a
+$$49$$
+Unidad:
+$$\mu\text{m}$$
+debido a que la
+tolerancia del
+ajuste es
+$$59,40$$
+Unidad:
+$$\mu\text{m}$$
+y no
+$$49$$
+Unidad:
+$$\mu\text{m}$$
+.
+
+Referencias:
+- Agujero:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+- Eje:
+$$d_i \approx -19,30$$
+Unidad:
+$$\mu\text{m}$$
+
+#### D:
+Representación:
+El ajuste es
+$$64H7/j7$$
+o
+$$64H7/js7$$
+(aproximado).
+
+#### E:
+Calibres:
+
+Para el eje
+(herradura):
+- Lado Pasa:
+Cota máxima.
+$$d_{max} = 64 + 0,0104$$
+$$d_{max} \approx 64,0104$$
+Unidad:
+$$\text{mm}$$
+- Lado No Pasa
+(Rechazo):
+Cota mínima.
+$$d_{min} = 64 - 0,0193$$
+$$d_{min} \approx 63,9807$$
+Unidad:
+$$\text{mm}$$
+
+Para el agujero
+(tampón):
+- Lado Pasa:
+Cota mínima.
+$$D_{min} = 64$$
+Unidad:
+$$\text{mm}$$
+- Lado No Pasa
+(Rechazo):
+Cota máxima.
+$$D_{max} = 64 + 0,0297$$
+$$D_{max} \approx 64,0297$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Ejercicio 16
+
+### Enunciado
+Transcription:
+16. Calcular las
+tolerancias
+correspondientes
+a las calidades
+6, 7, 8 y 9 para
+un grupo de
+diámetros de
+entre 30 y 50
+mm, expresar la
+medida en
+micras.
+
+### Solución Paso a Paso
+
+#### Datos:
+- Rango:
+$$30 < d \le 50$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 1:
+Media
+geométrica (N):
+$$N = \sqrt{30 \cdot 50}$$
+$$N \approx 38,73$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 2:
+Unidad de
+tolerancia (i):
+$$i = 0,45 \cdot \sqrt[3]{N} + 0,001 \cdot N$$
+$$i = 0,45 \cdot \sqrt[3]{38,73} + 0,001 \cdot 38,73$$
+$$i \approx 1,5612$$
+Unidad:
+$$\mu\text{m}$$
+
+#### Paso 3:
+Cálculo de las
+tolerancias:
+
+Calidad 6:
+$$T_6 = 10 \cdot i$$
+$$T_6 = 10 \cdot 1,5612$$
+$$T_6 \approx 15,61$$
+Unidad:
+$$\mu\text{m}$$
+(Equivale a
+$$0,01561$$
+Unidad:
+$$\text{mm}$$
+).
+
+Calidad 7:
+$$T_7 = 16 \cdot i$$
+$$T_7 = 16 \cdot 1,5612$$
+$$T_7 \approx 24,98$$
+Unidad:
+$$\mu\text{m}$$
+(Equivale a
+$$0,02498$$
+Unidad:
+$$\text{mm}$$
+).
+
+Calidad 8:
+$$T_8 = 25 \cdot i$$
+$$T_8 = 25 \cdot 1,5612$$
+$$T_8 \approx 39,03$$
+Unidad:
+$$\mu\text{m}$$
+(Equivale a
+$$0,03903$$
+Unidad:
+$$\text{mm}$$
+).
+
+Calidad 9:
+$$T_9 = 40 \cdot i$$
+$$T_9 = 40 \cdot 1,5612$$
+$$T_9 \approx 62,45$$
+Unidad:
+$$\mu\text{m}$$
+(Equivale a
+$$0,06245$$
+Unidad:
+$$\text{mm}$$
+).
+
+---
+
+## Ejercicio 17
+
+### Enunciado
+Transcription:
+17. Calcular la
+amplitud de la
+tolerancia para
+un ajuste entre
+macho y hembra al
+que le corresponde
+un diámetro
+nominal de 60 mm
+en las posiciones
+h7/h6 (ajuste
+deslizante),
+h7/j6 (ajuste
+indeterminado)
+y h7/r6 (ajuste
+prensado).
+Representar
+gráficamente
+cada uno de los
+casos.
+
+### Solución Paso a Paso
+
+#### Datos:
+- Medida nominal:
+$$d_N = 60$$
+Unidad:
+$$\text{mm}$$
+- Rango:
+$$50 < d \le 80$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 1:
+Media
+geométrica (N):
+$$N = \sqrt{50 \cdot 80}$$
+$$N \approx 63,25$$
+Unidad:
+$$\text{mm}$$
+
+#### Paso 2:
+Unidad de
+tolerancia (i):
+$$i = 0,45 \cdot \sqrt[3]{N} + 0,001 \cdot N$$
+$$i = 0,45 \cdot \sqrt[3]{63,25} + 0,001 \cdot 63,25$$
+$$i \approx 1,856$$
+Unidad:
+$$\mu\text{m}$$
+
+#### Paso 3:
+Tolerancia de
+cada pieza:
+- Hembra (H7):
+$$T_a = 16 \cdot i$$
+$$T_a = 16 \cdot 1,856$$
+$$T_a \approx 29,70$$
+Unidad:
+$$\mu\text{m}$$
+
+- Macho:
+$$T_e = 10 \cdot i$$
+$$T_e = 10 \cdot 1,856$$
+$$T_e \approx 18,56$$
+Unidad:
+$$\mu\text{m}$$
+
+#### Paso 4:
+Amplitud del
+ajuste:
+La amplitud es
+la suma de las
+tolerancias de
+las dos piezas:
+$$T_{aj} = T_a + T_e$$
+$$T_{aj} = 29,70 + 18,56$$
+$$T_{aj} \approx 48,26$$
+Unidad:
+$$\mu\text{m}$$
+
+Esta amplitud
+es la misma
+para los tres
+ajustes.
+
+#### Paso 5:
+Análisis por
+ajuste:
+
+- Caso H7/h6:
+Ajuste con
+juego.
+Hole:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s \approx 29,70$$
+Unidad:
+$$\mu\text{m}$$
+Shaft:
+$$d_s = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i \approx -18,56$$
+Unidad:
+$$\mu\text{m}$$
+
+- Caso H7/j6:
+Ajuste de
+transición
+(indeterminado).
+Hole:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s \approx 29,70$$
+Unidad:
+$$\mu\text{m}$$
+Shaft (j6):
+El rango del
+eje cruza la
+línea cero.
+
+- Caso H7/r6:
+Ajuste con
+apriete
+(prensado).
+Shaft (r6):
+El eje queda
+por encima
+del agujero.
+
+---
+
+## Ejercicio 18
+
+### Enunciado
+Transcription:
+18. En la figura
+se representan
+las tolerancias
+de un
+ensamblaje de
+eje con chaveta.
+a) Establecer el
+tipo de ajuste
+producido entre
+chaveta-eje y
+chaveta-
+alojamiento y
+especificar el
+juego o apriete
+máximo y mínimo
+generados en los
+dos casos.
+b) Determinar el
+ajuste eje-
+alojamiento,
+siguiendo la
+notación
+normalizada ISO,
+si el agujero
+del alojamiento
+presenta una
+tolerancia de
+calidad 9 y el
+montaje se
+efectúa con un
+juego mínimo de
+60 um y un juego
+máximo de 180 um
+siguiendo el
+sistema de
+agujero base.
+
+### Solución Paso a Paso
+
+#### Datos:
+- Medida nominal:
+$$d_N = 20$$
+Unidad:
+$$\text{mm}$$
+- Rango:
+$$18 < d \le 30$$
+Unidad:
+$$\text{mm}$$
+- N y i:
+$$N = \sqrt{18 \cdot 30} \approx 23,24$$
+Unidad:
+$$\text{mm}$$
+$$i \approx 1,31$$
+Unidad:
+$$\mu\text{m}$$
+
+#### A:
+1. Ajuste
+Chaveta-
+Alojamiento
+(20D10/h9):
+Hole (20D10):
+IT10 factor is
+$$64$$
+$$T_a = 64 \cdot i$$
+$$T_a = 64 \cdot 1,31$$
+$$T_a \approx 83,84$$
+Unidad:
+$$\mu\text{m}$$
+Para D:
+$$D_i = 65$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = 65 + 83,84$$
+$$D_s \approx 148,84$$
+Unidad:
+$$\mu\text{m}$$
+
+Shaft (20h9):
+IT9 factor is
+$$40$$
+$$T_e = 40 \cdot i$$
+$$T_e = 40 \cdot 1,31$$
+$$T_e \approx 52,40$$
+Unidad:
+$$\mu\text{m}$$
+Para h:
+$$d_s = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i = -52,40$$
+Unidad:
+$$\mu\text{m}$$
+
+Cálculo de
+juegos:
+- Máximo:
+$$J_{max} = D_s - d_i$$
+$$J_{max} = 148,84 - (-52,40)$$
+$$J_{max} \approx 201,24$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{max} = -A_{min}$$
+- Mínimo:
+$$J_{min} = D_i - d_s$$
+$$J_{min} = 65 - 0$$
+$$J_{min} = 65$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{min} = -A_{max}$$
+
+- Apriete máx:
+$$A_{max} = -65$$
+Unidad:
+$$\mu\text{m}$$
+- Apriete mín:
+$$A_{min} = -201,24$$
+Unidad:
+$$\mu\text{m}$$
+Ajuste:
+Con juego.
+
+2. Ajuste
+Chaveta-Eje
+(20N9/h9):
+Hole (20N9):
+IT9 factor is
+$$40$$
+$$T_a \approx 52,40$$
+Unidad:
+$$\mu\text{m}$$
+
+Shaft (20h9):
+$$T_e \approx 52,40$$
+Unidad:
+$$\mu\text{m}$$
+$$d_s = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i = -52,40$$
+Unidad:
+$$\mu\text{m}$$
+
+Para posición N:
+La desviación
+fundamental de
+referencia es
+$$D_s$$
+- Si asumimos
+$$D_s = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_i = -52,40$$
+Unidad:
+$$\mu\text{m}$$
+Juegos:
+$$J_{max} = D_s - d_i$$
+$$J_{max} = 0 - (-52,40)$$
+$$J_{max} \approx 52,40$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{min} = D_i - d_s$$
+$$J_{min} = -52,40 - 0$$
+$$J_{min} \approx -52,40$$
+Unidad:
+$$\mu\text{m}$$
+(Apriete máx:
+$$52,40$$
+Unidad:
+$$\mu\text{m}$$
+).
+Ajuste de
+transición.
+
+- Si usamos
+tabla ISO 286:
+$$D_s = -7$$
+Unidad:
+$$\mu\text{m}$$
+$$D_i = -7 - 52,40$$
+$$D_i \approx -59,40$$
+Unidad:
+$$\mu\text{m}$$
+Juegos:
+$$J_{max} = D_s - d_i$$
+$$J_{max} = -7 - (-52,40)$$
+$$J_{max} \approx 45,40$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{min} = D_i - d_s$$
+$$J_{min} = -59,40 - 0$$
+$$J_{min} \approx -59,40$$
+Unidad:
+$$\mu\text{m}$$
+(Apriete máx:
+$$59,40$$
+Unidad:
+$$\mu\text{m}$$
+).
+Ajuste de
+transición
+tirando a
+apriete.
+
+#### B:
+Ajuste Eje-
+Alojamiento:
+- Dn = 60 mm.
+- Rango:
+$$50 < d \le 80$$
+Unidad:
+$$\text{mm}$$
+- N y i:
+$$N \approx 63,25$$
+Unidad:
+$$\text{mm}$$
+$$i \approx 1,856$$
+Unidad:
+$$\mu\text{m}$$
+
+- Agujero IT9
+(H9 base):
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$T_a = 40 \cdot i$$
+$$T_a = 40 \cdot 1,8562$$
+$$T_a \approx 74,25$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s \approx 74,25$$
+Unidad:
+$$\mu\text{m}$$
+
+- Juegos:
+$$J_{min} = 60$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{max} = 180$$
+Unidad:
+$$\mu\text{m}$$
+
+- Eje:
+$$J_{max} = D_s - d_i$$
+$$180 = 74,25 - d_i$$
+$$d_i = 74,25 - 180$$
+$$d_i \approx -105,75$$
+Unidad:
+$$\mu\text{m}$$
+
+$$J_{min} = D_i - d_s$$
+$$60 = 0 - d_s$$
+$$d_s = -60$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia Te:
+$$T_e = d_s - d_i$$
+$$T_e = -60 - (-105,75)$$
+$$T_e \approx 45,75$$
+Unidad:
+$$\mu\text{m}$$
+
+IT grade:
+$$K = \frac{T_e}{i}$$
+$$K = \frac{45,75}{1,8562}$$
+$$K \approx 24,65 \approx 25$$
+Corresponde a
+IT8.
+
+Eje posición:
+$$d_s = -60$$
+Unidad:
+$$\mu\text{m}$$
+Para Dn=60 mm,
+la desviación
+de -60 micras
+corresponde al
+eje e.
+Por tanto, el
+eje es e8.
+
+Ajuste ISO:
+$$60H9/e8$$
+
+---
+
+## Ejercicio 19
+
+### Enunciado
+Transcription:
+19. Rodamiento en
+un árbol con
+Dnom = 20 mm.
+Apriete entre 9 y
+31 um. Proponer
+las tolerancias a
+aplicar mediante
+agujero único
+considerando
+IT5 - IT6 - IT7.
+
+### Solución Paso a Paso
+
+#### Datos:
+- Basic size:
+$$d_N = 20$$
+Unidad:
+$$\text{mm}$$
+- Range:
+$$18 < d \le 30$$
+Unidad:
+$$\text{mm}$$
+- N y i:
+$$N = \sqrt{18 \cdot 30} \approx 23,24$$
+Unidad:
+$$\text{mm}$$
+$$i \approx 1,307$$
+Unidad:
+$$\mu\text{m}$$
+
+Requisitos de
+apriete:
+- Apriete máx:
+$$A_{max} = 31$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{min} = -31$$
+Unidad:
+$$\mu\text{m}$$
+- Apriete mín:
+$$A_{min} = 9$$
+Unidad:
+$$\mu\text{m}$$
+$$J_{max} = -9$$
+Unidad:
+$$\mu\text{m}$$
+
+Tolerancia total
+del ajuste:
+$$T_{aj} = J_{max} - J_{min}$$
+$$T_{aj} = -9 - (-31)$$
+$$T_{aj} = 22$$
+Unidad:
+$$\mu\text{m}$$
+
+#### Análisis:
+
+1. Con IT5:
+$$T_a = T_e = 7 \cdot i$$
+$$T_a \approx 9,15$$
+Unidad:
+$$\mu\text{m}$$
+$$T_{aj} = 9,15 + 9,15$$
+$$T_{aj} \approx 18,30$$
+Unidad:
+$$\mu\text{m}$$
+Agujero base:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = 9,15$$
+Unidad:
+$$\mu\text{m}$$
+Para eje:
+$$A_{max} = d_s - D_i = 31$$
+$$d_s = 31$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i = 31 - 9,15$$
+$$d_i \approx 21,85$$
+Unidad:
+$$\mu\text{m}$$
+Juegos reales:
+$$J_{max} = 9,15 - 21,85$$
+$$J_{max} \approx -12,70$$
+Unidad:
+$$\mu\text{m}$$
+(Apriete mín
+de
+$$12,70$$
+Unidad:
+$$\mu\text{m}$$
+).
+Rango:
+$$[12,70, 31]$$
+Unidad:
+$$\mu\text{m}$$
+(Cumple, está
+dentro del
+rango).
+
+2. Con IT6:
+$$T_a = T_e = 10 \cdot i$$
+$$T_a \approx 13,07$$
+Unidad:
+$$\mu\text{m}$$
+$$T_{aj} \approx 26,14$$
+Unidad:
+$$\mu\text{m}$$
+Agujero base:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = 13,07$$
+Unidad:
+$$\mu\text{m}$$
+Eje:
+$$d_s = 31$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i \approx 17,93$$
+Unidad:
+$$\mu\text{m}$$
+Juegos reales:
+$$J_{max} = 13,07 - 17,93$$
+$$J_{max} \approx -4,86$$
+Unidad:
+$$\mu\text{m}$$
+(Apriete mín
+de
+$$4,86$$
+Unidad:
+$$\mu\text{m}$$
+).
+Rango:
+$$[4,86, 31]$$
+Unidad:
+$$\mu\text{m}$$
+(No cumple, es
+menor a 9).
+
+3. Con IT7:
+$$T_a = T_e = 16 \cdot i$$
+$$T_a \approx 20,91$$
+Unidad:
+$$\mu\text{m}$$
+$$T_{aj} \approx 41,82$$
+Unidad:
+$$\mu\text{m}$$
+Agujero base:
+$$D_i = 0$$
+Unidad:
+$$\mu\text{m}$$
+$$D_s = 20,91$$
+Unidad:
+$$\mu\text{m}$$
+Eje:
+$$d_s = 31$$
+Unidad:
+$$\mu\text{m}$$
+$$d_i \approx 10,09$$
+Unidad:
+$$\mu\text{m}$$
+Juegos reales:
+$$J_{max} = 20,91 - 10,09$$
+$$J_{max} \approx 10,82$$
+Unidad:
+$$\mu\text{m}$$
+(Tiene juego,
+no cumple).
+
+#### Conclusión:
+La tolerancia
+de ajuste de
+22 micras
+indica usar un
+eje de
+calidad IT5 o
+IT6. Se
+sugiere un
+eje con
+posición m o p.
+
+---
+
+## Ejercicio 20
+
+### Enunciado
+Transcription:
+20. Interpretar
+el plano de la
+figura.
+8x D15(+0,018/0)
+[Posición | D0,1 | B | C]
+
+### Solución Paso a Paso
+
+#### Análisis:
+
+1. Explicación de
+la cota
+$$8 \times \Phi 15 \text{ (+0,018 / 0)}$$
+- Se trata de 8
+agujeros de
+diámetro
+nominal
+$$15$$
+Unidad:
+$$\text{mm}$$
+- Desviación
+superior:
+$$+0,018$$
+Unidad:
+$$\text{mm}$$
+- Desviación
+inferior:
+$$0$$
+Unidad:
+$$\text{mm}$$
+- Diámetro mín:
+$$\Phi_{min} = 15$$
+Unidad:
+$$\text{mm}$$
+- Diámetro máx:
+$$\Phi_{max} = 15,018$$
+Unidad:
+$$\text{mm}$$
+
+2. Tolerancia
+geométrica:
+$$[Posición | \Phi 0,1 | B | C]$$
+- Indica que los
+ejes de los 8
+agujeros deben
+estar
+localizados
+dentro de un
+límite cilíndrico
+de diámetro
+$$0,1$$
+Unidad:
+$$\text{mm}$$
+- Este cilindro
+está centrado
+en la posición
+teórica exacta.
+- Los símbolos
+B y C hacen
+referencia a
+las superficies
+o ejes que se
+toman como
+referencias
+(datums).
